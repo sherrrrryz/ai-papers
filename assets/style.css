@@ -67,3 +67,19 @@ th[data-key="citations"] { text-align: right; }
 .analysis blockquote { margin: 1em 0; padding: 0 1em; border-left: 3px solid var(--border); color: var(--muted); }
 .analysis code { background: var(--row-hover); padding: 1px 4px; border-radius: 4px; }
 .analysis table { margin: 1em 0; border: 1px solid var(--border); }
+
+.hl-bar { max-width: 760px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; font-size: 13px; color: var(--muted); }
+.hl-bar button, .hl-popup button {
+  font: inherit; font-size: 13px; color: inherit; background: var(--surface);
+  border: 1px solid var(--border); border-radius: 6px; padding: 3px 10px; cursor: pointer;
+}
+.hl-count { margin-right: auto; }
+.hl-popup { position: absolute; z-index: 10; }
+.hl-popup button { background: var(--text); color: var(--bg); border-color: var(--text); box-shadow: 0 2px 8px rgb(0 0 0 / 0.2); }
+mark.hl { background: #fde68a; color: #1f1d1a; border-radius: 2px; cursor: pointer; }
+mark.hl.flash { animation: hl-flash 1s ease-out; }
+@keyframes hl-flash { from { background: #f59e0b; } to { background: #fde68a; } }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) mark.hl { background: #a16207; color: #fef9c3; }
+  :root:not([data-theme="light"]) mark.hl.flash { animation: none; }
+}

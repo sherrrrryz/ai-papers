@@ -40,15 +40,19 @@
       if (!p.has_analysis) {
         article.replaceChildren(about);
         article.append(Object.assign(document.createElement("p"), { className: "empty", textContent: "No in-depth analysis yet." }));
-        return;
+        return Highlighter.init(article, id);
       }
       return fetch(`analyses/${encodeURIComponent(id)}.md`, { cache: "no-cache" }).then((r) => {
-        if (!r.ok) return article.replaceChildren(about);
+        if (!r.ok) {
+          article.replaceChildren(about);
+          return Highlighter.init(article, id);
+        }
         return r.text().then((md) => {
           const analysis = document.createElement("section");
           analysis.className = "analysis-body";
           analysis.innerHTML = DOMPurify.sanitize(marked.parse(md));
           article.replaceChildren(analysis, about);
+          Highlighter.init(article, id);
         });
       });
     })

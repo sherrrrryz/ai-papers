@@ -14,10 +14,17 @@
     <p class="meta" id="meta"></p>
   </header>
   <main>
+    <div id="hl-bar" class="hl-bar" hidden>
+      <span class="hl-count"></span>
+      <button type="button" class="hl-next" hidden>Jump to next</button>
+      <button type="button" class="hl-clear" hidden>Clear all</button>
+    </div>
     <article id="analysis" class="analysis"><p class="empty">Loading…</p></article>
   </main>
+  <div id="hl-popup" class="hl-popup" hidden></div>
   <script src="assets/vendor/marked.min.js"></script>
   <script src="assets/vendor/purify.min.js"></script>
+  <script src="assets/highlight.js"></script>
   <script src="assets/paper.js"></script>
 </body>
 </html>
