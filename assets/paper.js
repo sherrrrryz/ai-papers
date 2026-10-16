@@ -20,6 +20,10 @@
       if (p.url) meta.append(link(p.url, "arXiv"));
       document.getElementById("authors").textContent = p.authors || "";
 
+      const ready = () => {
+        Highlighter.init(article, id);
+        if (window.AskAI) AskAI.init(p, article);
+      };
       const about = document.createElement("section");
       if (p.note) about.append(Object.assign(document.createElement("p"), { className: "note", textContent: p.note }));
       if ((p.tags || []).length) {
@@ -40,19 +44,19 @@
       if (!p.has_analysis) {
         article.replaceChildren(about);
         article.append(Object.assign(document.createElement("p"), { className: "empty", textContent: "No in-depth analysis yet." }));
-        return Highlighter.init(article, id);
+        return ready();
       }
       return fetch(`analyses/${encodeURIComponent(id)}.md`, { cache: "no-cache" }).then((r) => {
         if (!r.ok) {
           article.replaceChildren(about);
-          return Highlighter.init(article, id);
+          return ready();
         }
         return r.text().then((md) => {
           const analysis = document.createElement("section");
           analysis.className = "analysis-body";
           analysis.innerHTML = DOMPurify.sanitize(marked.parse(md));
           article.replaceChildren(analysis, about);
-          Highlighter.init(article, id);
+          ready();
         });
       });
     })

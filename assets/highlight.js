@@ -81,11 +81,19 @@ window.Highlighter = (function () {
 
   function hidePopup() { popup.hidden = true; popup.replaceChildren(); }
 
-  function showPopup(rect, label, onClick) {
-    const btn = Object.assign(document.createElement("button"), { type: "button", textContent: label });
-    btn.addEventListener("mousedown", (e) => e.preventDefault()); // keep the selection
-    btn.addEventListener("click", () => { onClick(); hidePopup(); });
-    popup.replaceChildren(btn);
+  // actions: [[label, onClick], ...]. Adds "Explain" and "Ask AI" when the AI panel is on the page.
+  function showPopup(rect, actions, text) {
+    if (text && window.AskAI) {
+      actions = [...actions,
+        ["Explain", () => AskAI.askAbout(text, "Explain this passage in plain terms, in the context of the paper.")],
+        ["Ask AI", () => AskAI.askAbout(text)]];
+    }
+    popup.replaceChildren(...actions.map(([label, onClick]) => {
+      const btn = Object.assign(document.createElement("button"), { type: "button", textContent: label });
+      btn.addEventListener("mousedown", (e) => e.preventDefault()); // keep the selection
+      btn.addEventListener("click", () => { onClick(); hidePopup(); });
+      return btn;
+    }));
     popup.hidden = false;
     const top = rect.top + window.scrollY - popup.offsetHeight - 8;
     const left = rect.left + window.scrollX + rect.width / 2 - popup.offsetWidth / 2;
@@ -101,7 +109,7 @@ window.Highlighter = (function () {
     const start = offsetOf(range.startContainer, range.startOffset);
     const end = offsetOf(range.endContainer, range.endOffset);
     if (end <= start || !range.toString().trim()) return;
-    showPopup(range.getBoundingClientRect(), "Highlight", () => { add(start, end); sel.removeAllRanges(); });
+    showPopup(range.getBoundingClientRect(), [["Highlight", () => { add(start, end); sel.removeAllRanges(); }]], range.toString());
   }
 
   function updateBar() {
@@ -156,7 +164,8 @@ window.Highlighter = (function () {
     root.addEventListener("click", (e) => {
       const mark = e.target.closest("mark.hl");
       if (!mark || !window.getSelection().isCollapsed) return;
-      showPopup(mark.getBoundingClientRect(), "Remove highlight", () => remove(mark.dataset.hl));
+      const h = items.find((x) => x.id === mark.dataset.hl);
+      showPopup(mark.getBoundingClientRect(), [["Remove highlight", () => remove(mark.dataset.hl)]], h && h.text);
     });
     window.addEventListener("resize", hidePopup);
   }

@@ -11,6 +11,7 @@ A static website listing AI-related CHI papers in one filterable, sortable table
 | `data/tags.json` | Tags grouping papers (for example "Experiment proposal" with sub tags per research question), each with a note on why the paper belongs. Shown as chips in the table, as a Tag filter, and on each paper's page. |
 | `data/papers.json` | The table's data, generated from the CSV and the PDFs. Don't edit by hand. |
 | `analyses/<id>.md` | Analysis for one paper, shown at `paper.html?id=<id>`. On that page you can select text and click Highlight; click a highlight to remove it. Highlights are kept in your browser's local storage, so they stay on that browser only. |
+| `assets/ask-ai.js` | The "Ask AI" panel on paper pages: chat about the paper, quick prompts, and Explain / Ask AI on selected text. It talks to [Ollama](https://ollama.com) running on your own computer (`http://localhost:11434`), so it works only on a computer with Ollama running. To use it from the live site, allow the site once with `launchctl setenv OLLAMA_ORIGINS "https://<user>.github.io"` and restart Ollama. |
 | `scripts/import_xlsx.py` | Imports a spreadsheet into `data/papers.csv`. Needs `openpyxl`. |
 | `scripts/fetch_citations.py` | Fetches citation counts from Semantic Scholar into `data/citations.json`. Runs in GitHub Actions on every deploy and every Monday. |
 | `scripts/build_index.py` | Builds `data/papers.json`. Standard library only. |
