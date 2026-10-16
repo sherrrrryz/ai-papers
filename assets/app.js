@@ -3,7 +3,7 @@
   const $ = (id) => document.getElementById(id);
   const els = {
     search: $("search"), year: $("filter-year"), type: $("filter-type"),
-    subtype: $("filter-subtype"), important: $("filter-important"),
+    subtype: $("filter-subtype"), tag: $("filter-tag"), important: $("filter-important"),
     body: document.querySelector("#papers tbody"), empty: $("empty"), count: $("count"),
   };
 
@@ -15,6 +15,31 @@
     [...new Set(values.filter((v) => v !== "" && v != null))]
       .sort((a, b) => (typeof a === "number" ? b - a : String(a).localeCompare(String(b))))
       .forEach((v) => select.add(new Option(v, v)));
+  }
+
+  // Tag filter values: "Tag" matches any sub tag, "Tag\u0000Sub" matches one.
+  function fillTags(papers) {
+    const groups = new Map();
+    papers.forEach((p) => (p.tags || []).forEach((t) => {
+      if (!groups.has(t.tag)) groups.set(t.tag, new Map());
+      const subs = groups.get(t.tag);
+      subs.set(t.subtag, (subs.get(t.subtag) || new Set()).add(p.id));
+    }));
+    groups.forEach((subs, tag) => {
+      const group = document.createElement("optgroup");
+      group.label = tag;
+      const all = new Set([...subs.values()].flatMap((s) => [...s]));
+      group.append(new Option(`${tag} (all, ${all.size})`, tag));
+      [...subs].sort(([a], [b]) => a.localeCompare(b)).forEach(([sub, ids]) => group.append(new Option(`${sub} (${ids.size})`, `${tag}\u0000${sub}`)));
+      els.tag.append(group);
+    });
+    els.tag.hidden = groups.size === 0;
+  }
+
+  function matchesTag(p) {
+    if (!els.tag.value) return true;
+    const [tag, sub] = els.tag.value.split("\u0000");
+    return (p.tags || []).some((t) => t.tag === tag && (sub === undefined || t.subtag === sub));
   }
 
   function compare(a, b) {
@@ -35,13 +60,16 @@
       (!els.year.value || String(p.year) === els.year.value) &&
       (!els.type.value || p.type === els.type.value) &&
       (!els.subtype.value || p.sub_type === els.subtype.value) &&
+      matchesTag(p) &&
       (!els.important.checked || p.has_analysis)
     ).sort(compare);
 
     els.body.innerHTML = rows.map((p) => {
       const badge = p.has_analysis ? ` <span class="badge">Analysis</span>` : "";
       const authors = p.authors ? `<div class="authors">${escapeHtml(p.authors)}</div>` : "";
-      const title = `<a href="paper.html?id=${encodeURIComponent(p.id)}">${escapeHtml(p.title)}</a>${badge}${authors}`;
+      const tags = (p.tags || []).length ? `<div class="tags">${p.tags.map((t) =>
+        `<span class="tag${t.key ? " key" : ""}" title="${escapeHtml(t.tag)}: ${escapeHtml(t.why)}">${escapeHtml(t.subtag)}${t.key ? " ★" : ""}</span>`).join("")}</div>` : "";
+      const title = `<a href="paper.html?id=${encodeURIComponent(p.id)}">${escapeHtml(p.title)}</a>${badge}${authors}${tags}`;
       return `<tr>
         <td class="title">${title}</td>
         <td>${escapeHtml(p.year ?? "")}</td>
@@ -73,9 +101,9 @@
     th.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); sort(); } });
   });
 
-  [els.search, els.year, els.type, els.subtype, els.important].forEach((el) => el.addEventListener("input", render));
+  [els.search, els.year, els.type, els.subtype, els.tag, els.important].forEach((el) => el.addEventListener("input", render));
   $("reset").addEventListener("click", () => {
-    els.search.value = els.year.value = els.type.value = els.subtype.value = "";
+    els.search.value = els.year.value = els.type.value = els.subtype.value = els.tag.value = "";
     els.important.checked = false;
     render();
   });
@@ -87,6 +115,7 @@
       fillSelect(els.year, papers.map((p) => p.year));
       fillSelect(els.type, papers.map((p) => p.type));
       fillSelect(els.subtype, papers.map((p) => p.sub_type));
+      fillTags(papers);
       render();
     })
     .catch(() => { els.empty.hidden = false; els.empty.textContent = "Could not load data/papers.json."; });

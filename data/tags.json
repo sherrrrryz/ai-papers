@@ -1,0 +1,187 @@
+{
+  "Experiment proposal": {
+    "description": "Papers related to Sherry's proposal on helping designers and PMs plan, communicate and interpret AI-assisted product experiments (matched 16 Oct 2026).",
+    "subtags": {
+      "Verifying AI analysis": {
+        "2309.10947": {
+          "key": true,
+          "why": "Your Gu et al. anchor: a design probe for how analysts check AI-generated analyses, which your designers would need without the coding background."
+        },
+        "2309.10108": {
+          "key": true,
+          "why": "The \"analysts responding to AI assistance\" paper in your table; it covers AI help with analysis *planning*, which is close to your RQ1."
+        },
+        "2603.14133": {
+          "key": true,
+          "why": "Same finding as *Not Everyone Wins*: CS skill still predicts who succeeds with AI-built output. Strong support for \"AI lowered the barrier to doing, not to judging.\""
+        },
+        "2401.15232": {
+          "key": true,
+          "why": "Non-experts struggle at each step: stating intent, judging whether output is right, fixing it. That is your population problem in a coding setting."
+        },
+        "2505.08063": {
+          "key": false,
+          "why": "Novices on a low-verifiability task fall into metacognitive traps when checking LLM output."
+        },
+        "2504.13903": {
+          "key": false,
+          "why": "Experience doesn't change adoption but does change the mental model of AI's role."
+        },
+        "2603.14225": {
+          "key": false,
+          "why": "Even experts skim agent output; relevant to your AI layer that opens PRs."
+        },
+        "2502.08554": {
+          "key": true,
+          "why": "Explanations raise reliance even when the answer is wrong. Directly relevant to your AI-written hypotheses and captions."
+        },
+        "2602.11567": {
+          "key": false,
+          "why": "Plants misinformation and measures who catches it, the same method as your \"planted trap\" evaluation."
+        },
+        "2603.15824": {
+          "key": false,
+          "why": "Recommendation-style AI lowers people's evidence threshold even when accuracy stays the same, which argues for presenting the AI inference as a hypothesis to test."
+        },
+        "2504.06771": {
+          "key": false,
+          "why": "AI that builds on the user's own reasoning beats bare recommendations, which matches your \"AI proposes, people decide\" principle."
+        },
+        "2403.16812": {
+          "key": false,
+          "why": "Gets people to engage with an AI suggestion dimension by dimension instead of accepting or rejecting it whole."
+        },
+        "2603.18895": {
+          "key": false,
+          "why": "A metric taxonomy (reliance, safety signals) you could borrow for the evaluation."
+        },
+        "2603.08849": {
+          "key": false,
+          "why": "When the AI is available changes the quality of reasoning; relevant to your three-minute comprehension test."
+        }
+      },
+      "RQ1 Planning": {
+        "2502.10526": {
+          "key": true,
+          "why": "The closest analogue to RQ1: it makes a technical specification (what to predict, when, for whom) readable and critiquable by non-data-scientists."
+        },
+        "2402.15350": {
+          "key": true,
+          "why": "An in-situ pre-mortem while prototyping, with LLM-generated, editable harms. A direct precedent for your risk cards."
+        },
+        "2309.09495": {
+          "key": false,
+          "why": "Shows the AI's understanding back to the user in plain language so they can correct it, like your editable inferred hypothesis."
+        },
+        "2412.10999": {
+          "key": false,
+          "why": "An editable shared plan where steps are assigned to the human or the agent."
+        },
+        "2502.01390": {
+          "key": false,
+          "why": "Human review of an AI plan before execution, and how that review affects trust."
+        },
+        "2603.11677": {
+          "key": false,
+          "why": "Argues for showing consequences before acting, the same reasoning behind your duration slider and risk cards."
+        },
+        "2510.14591": {
+          "key": false,
+          "why": "Infers the user's goal from behaviour and steers the AI with it, comparable to inferring the hypothesis from a code diff."
+        },
+        "2603.29890": {
+          "key": false,
+          "why": "AI in PM concept testing: agents match the population distribution but miss on individuals. Useful caution on AI-inferred user intent."
+        },
+        "2310.04329": {
+          "key": false,
+          "why": "Lets non-programmers specify something executable, a pattern for designers specifying instrumentation."
+        },
+        "2604.16323": {
+          "key": false,
+          "why": "Argues that code diffs alone don't convey intent; relevant to inferring a hypothesis from a diff."
+        }
+      },
+      "RQ2 Communicating": {
+        "2504.15549": {
+          "key": true,
+          "why": "Step-by-step guided interaction beat full automation on control and learnability across data-analysis and visual-design tasks."
+        },
+        "2604.06200": {
+          "key": true,
+          "why": "A persistent shared visual workspace beats a chat-only interface for collaborative design work, close to your \"operable brief\" claim."
+        },
+        "2402.15605": {
+          "key": false,
+          "why": "Measures whether the audience sees what the author intended, a method for your restatement-accuracy measure."
+        },
+        "2601.11072": {
+          "key": false,
+          "why": "Plain text labels communicated worst and visual timelines communicated better. Relevant to how you label AI-generated captions."
+        },
+        "2602.01796": {
+          "key": false,
+          "why": "A Figma tool that frames design feedback from UX, PM and engineering roles, the same cross-functional gap your brief bridges."
+        },
+        "2403.13139": {
+          "key": false,
+          "why": "An LLM reading a design artifact and producing judgments designers act on."
+        },
+        "2309.15237": {
+          "key": false,
+          "why": "Background on your population: designers keep agency and see AI as assistive."
+        },
+        "2603.05848": {
+          "key": false,
+          "why": "Designers negotiate rigor and responsibility at team level, which supports \"know when to call an analyst.\""
+        },
+        "2401.14484": {
+          "key": false,
+          "why": "Established principles to position your own design principles against."
+        }
+      },
+      "RQ3 Reading results": {
+        "2401.08876": {
+          "key": true,
+          "why": "A pre-registered test of uncertainty displays: whether they help depends on task difficulty."
+        },
+        "2603.22766": {
+          "key": true,
+          "why": "An uncertainty visualization that helps non-experts decide under many variables, similar to segments and guardrails."
+        },
+        "2503.16114": {
+          "key": false,
+          "why": "Showing variability reduces undue trust but adds load, which is your \"misreading drops without readers giving up\" trade-off."
+        },
+        "2405.20434": {
+          "key": false,
+          "why": "Compares ways of communicating how reliable AI text is, applicable to your AI-labelled captions."
+        },
+        "2602.09631": {
+          "key": false,
+          "why": "A theory of what interaction asks of chart readers, useful for framing readers without statistics."
+        },
+        "2310.01935": {
+          "key": false,
+          "why": "How professionals design charts for lay audiences."
+        },
+        "2411.12299": {
+          "key": false,
+          "why": "Lay readers' heuristics versus statistical rationality when reading charts."
+        },
+        "2502.11919": {
+          "key": false,
+          "why": "LLM-written natural-language analysis of a recommendation improves appropriate reliance, which bears on your caption-only role for the model."
+        },
+        "2309.15723": {
+          "key": false,
+          "why": "A survey of AI tools that turn data into narrative, the space your results view sits in."
+        },
+        "2403.09121": {
+          "key": false,
+          "why": "Turns analysis code into a communicable story, a step comparable to your results-to-design-judgment step."
+        }
+      }
+    }
+  }
+}

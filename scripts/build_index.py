@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build data/papers.json from data/papers.csv and the PDFs in papers/.
 
+data/tags.json groups papers under tags (each with sub tags and a note on
+why the paper belongs); they are copied onto each paper as "tags".
 data/papers.csv holds the papers imported from the spreadsheet (see
 scripts/import_xlsx.py); edit it to correct a type or sub type.
 PDFs dropped into papers/ are added too: new ones get an entry parsed from
@@ -24,6 +26,7 @@ DATA_FILE = ROOT / "data" / "papers.json"
 CSV_FILE = ROOT / "data" / "papers.csv"
 CITATIONS_FILE = ROOT / "data" / "citations.json"
 ANALYSES_DIR = ROOT / "analyses"
+TAGS_FILE = ROOT / "data" / "tags.json"
 
 YEAR_RE = re.compile(r"(?<!\d)(19|20)\d{2}(?!\d)")
 
@@ -99,7 +102,14 @@ def main():
     citations = {}
     if CITATIONS_FILE.exists():
         citations = json.loads(CITATIONS_FILE.read_text(encoding="utf-8")).get("counts", {})
+    tags = {}
+    if TAGS_FILE.exists():
+        for tag, spec in json.loads(TAGS_FILE.read_text(encoding="utf-8")).items():
+            for subtag, members in spec.get("subtags", {}).items():
+                for pid, info in members.items():
+                    tags.setdefault(pid, []).append({"tag": tag, "subtag": subtag, **info})
     for entry in papers:
+        entry["tags"] = tags.get(entry["id"], [])
         entry["citations"] = citations.get(entry["id"])
         entry["has_analysis"] = (ANALYSES_DIR / f"{entry['id']}.md").exists()
 

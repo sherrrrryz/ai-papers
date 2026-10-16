@@ -22,6 +22,16 @@
 
       const about = document.createElement("section");
       if (p.note) about.append(Object.assign(document.createElement("p"), { className: "note", textContent: p.note }));
+      if ((p.tags || []).length) {
+        const notes = Object.assign(document.createElement("section"), { className: "tag-notes" });
+        notes.append(Object.assign(document.createElement("h2"), { textContent: "Tags" }));
+        p.tags.forEach((t) => {
+          const line = document.createElement("p");
+          line.append(Object.assign(document.createElement("strong"), { textContent: `${t.tag} · ${t.subtag}${t.key ? " ★" : ""}: ` }), t.why);
+          notes.append(line);
+        });
+        about.append(notes);
+      }
       if (p.abstract) {
         about.append(Object.assign(document.createElement("h2"), { textContent: "Abstract" }));
         about.append(Object.assign(document.createElement("p"), { textContent: p.abstract }));
