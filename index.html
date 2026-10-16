@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI CHI Papers</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>AI CHI Papers</h1>
+    <p class="subtitle">AI-related papers from the ACM CHI conference. <span id="count"></span></p>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="Filters">
+      <input id="search" type="search" placeholder="Search title or summary" aria-label="Search">
+      <select id="filter-year" aria-label="Year"><option value="">All years</option></select>
+      <select id="filter-type" aria-label="Type"><option value="">All types</option></select>
+      <select id="filter-subtype" aria-label="Sub type"><option value="">All sub types</option></select>
+      <label class="check"><input id="filter-important" type="checkbox"> Analyzed only</label>
+      <button id="reset" type="button">Reset</button>
+    </section>
+
+    <div class="table-wrap">
+      <table id="papers">
+        <thead>
+          <tr>
+            <th data-key="title" class="sortable">Title</th>
+            <th data-key="year" class="sortable">Year</th>
+            <th data-key="type" class="sortable">Type</th>
+            <th data-key="sub_type" class="sortable">Sub type</th>
+            <th>PDF</th>
+            <th data-key="summary" class="sortable">Summary</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="empty" class="empty" hidden></p>
+    </div>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
