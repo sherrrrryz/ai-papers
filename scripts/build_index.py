@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PAPERS_DIR = ROOT / "papers"
 DATA_FILE = ROOT / "data" / "papers.json"
 CSV_FILE = ROOT / "data" / "papers.csv"
+CITATIONS_FILE = ROOT / "data" / "citations.json"
 ANALYSES_DIR = ROOT / "analyses"
 
 YEAR_RE = re.compile(r"(?<!\d)(19|20)\d{2}(?!\d)")
@@ -95,7 +96,11 @@ def main():
         used_ids.add(entry["id"])
         papers.append(entry)
 
+    citations = {}
+    if CITATIONS_FILE.exists():
+        citations = json.loads(CITATIONS_FILE.read_text(encoding="utf-8")).get("counts", {})
     for entry in papers:
+        entry["citations"] = citations.get(entry["id"])
         entry["has_analysis"] = (ANALYSES_DIR / f"{entry['id']}.md").exists()
 
     removed = len(by_file) - (len(papers) - from_csv - added)

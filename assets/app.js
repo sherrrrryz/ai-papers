@@ -47,6 +47,7 @@
         <td>${escapeHtml(p.year ?? "")}</td>
         <td>${escapeHtml(p.type)}</td>
         <td>${escapeHtml(p.sub_type)}</td>
+        <td class="num">${p.citations == null ? "—" : p.citations}</td>
         <td><a href="${encodeURI(p.pdf)}" target="_blank" rel="noopener">PDF</a></td>
       </tr>`;
     }).join("");
@@ -65,7 +66,7 @@
     th.tabIndex = 0;
     const sort = () => {
       if (state.sortKey === th.dataset.key) state.sortDir *= -1;
-      else { state.sortKey = th.dataset.key; state.sortDir = th.dataset.key === "year" ? -1 : 1; }
+      else { state.sortKey = th.dataset.key; state.sortDir = ["year", "citations"].includes(th.dataset.key) ? -1 : 1; }
       render();
     };
     th.addEventListener("click", sort);

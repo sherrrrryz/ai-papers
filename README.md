@@ -11,6 +11,7 @@ A static website listing AI-related CHI papers in one filterable, sortable table
 | `data/papers.json` | The table's data, generated from the CSV and the PDFs. Don't edit by hand. |
 | `analyses/<id>.md` | Analysis for one paper, shown at `paper.html?id=<id>`. |
 | `scripts/import_xlsx.py` | Imports a spreadsheet into `data/papers.csv`. Needs `openpyxl`. |
+| `scripts/fetch_citations.py` | Fetches citation counts from Semantic Scholar into `data/citations.json`. Runs in GitHub Actions on every deploy and every Monday. |
 | `scripts/build_index.py` | Builds `data/papers.json`. Standard library only. |
 | `index.html`, `paper.html`, `assets/` | The site. |
 
