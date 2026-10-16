@@ -84,7 +84,7 @@
       }
     ],
     "citations": 3,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2603.13717",
@@ -235,7 +235,7 @@
       }
     ],
     "citations": 4,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2602.22171",
@@ -626,7 +626,7 @@
       }
     ],
     "citations": 14,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2603.27295",
@@ -681,7 +681,7 @@
       }
     ],
     "citations": 1,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2603.19504",
@@ -928,7 +928,7 @@
       }
     ],
     "citations": 65,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2603.16614",
@@ -1047,7 +1047,7 @@
       }
     ],
     "citations": 4,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2603.26173",
@@ -1102,7 +1102,7 @@
       }
     ],
     "citations": 4,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2604.12545",
@@ -1749,7 +1749,7 @@
       }
     ],
     "citations": 1,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2604.08082",
@@ -1788,7 +1788,7 @@
       }
     ],
     "citations": 0,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2603.07956",
@@ -1843,7 +1843,7 @@
       }
     ],
     "citations": 0,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2605.19838",
@@ -2266,7 +2266,7 @@
       }
     ],
     "citations": 1,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2603.08849",
@@ -2289,7 +2289,7 @@
       }
     ],
     "citations": 12,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2602.08227",
@@ -2344,7 +2344,7 @@
       }
     ],
     "citations": 25,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2602.12432",
@@ -2559,7 +2559,7 @@
       }
     ],
     "citations": 8,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2603.22152",
@@ -2886,7 +2886,7 @@
       }
     ],
     "citations": 2,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2510.18039",
@@ -3197,7 +3197,7 @@
       }
     ],
     "citations": 1,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2504.19611",
@@ -3652,7 +3652,7 @@
       }
     ],
     "citations": 4,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2604.06200",
@@ -3675,7 +3675,7 @@
       }
     ],
     "citations": 1,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2509.18008",
@@ -4354,7 +4354,7 @@
       }
     ],
     "citations": 51,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2503.03532",
@@ -4889,7 +4889,7 @@
       }
     ],
     "citations": 20,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2504.12424",
@@ -5168,7 +5168,7 @@
       }
     ],
     "citations": 123,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2504.13903",
@@ -5191,7 +5191,7 @@
       }
     ],
     "citations": 0,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2502.11919",
@@ -5214,7 +5214,7 @@
       }
     ],
     "citations": 32,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2501.11457",
@@ -5669,7 +5669,7 @@
       }
     ],
     "citations": 96,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2409.17213",
@@ -5900,7 +5900,7 @@
       }
     ],
     "citations": 9,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2502.05661",
@@ -5955,7 +5955,7 @@
       }
     ],
     "citations": 116,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2502.19877",
@@ -6170,7 +6170,7 @@
       }
     ],
     "citations": 7,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2404.00573",
@@ -6529,7 +6529,7 @@
       }
     ],
     "citations": 0,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2403.00179",
@@ -6600,7 +6600,7 @@
       }
     ],
     "citations": 324,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2404.15576",
@@ -6671,7 +6671,7 @@
       }
     ],
     "citations": 57,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2403.09592",
@@ -6758,7 +6758,7 @@
       }
     ],
     "citations": 20,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2405.09144",
@@ -6941,7 +6941,7 @@
       }
     ],
     "citations": 22,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2310.15461",
@@ -6996,7 +6996,7 @@
       }
     ],
     "citations": 101,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2403.07997",
@@ -7067,7 +7067,7 @@
       }
     ],
     "citations": 101,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2410.23803",
@@ -7138,7 +7138,7 @@
       }
     ],
     "citations": 116,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2403.05104",
@@ -7177,7 +7177,7 @@
       }
     ],
     "citations": 74,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2309.10108",
@@ -7200,7 +7200,7 @@
       }
     ],
     "citations": 67,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2406.18675",
@@ -7671,7 +7671,7 @@
       }
     ],
     "citations": 22,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2403.02939",
@@ -7726,7 +7726,7 @@
       }
     ],
     "citations": 15,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2401.17120",
@@ -7797,7 +7797,7 @@
       }
     ],
     "citations": 6,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2401.10838",
@@ -8108,7 +8108,7 @@
       }
     ],
     "citations": 4,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2501.16084",
@@ -8355,7 +8355,7 @@
       }
     ],
     "citations": 196,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2603.08604",
@@ -8410,7 +8410,7 @@
       }
     ],
     "citations": 94,
-    "has_analysis": false
+    "has_analysis": true
   },
   {
     "id": "2404.07005",
