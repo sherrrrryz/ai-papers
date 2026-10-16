@@ -31,7 +31,7 @@
   function render() {
     const q = els.search.value.trim().toLowerCase();
     const rows = state.papers.filter((p) =>
-      (!q || `${p.title} ${p.summary}`.toLowerCase().includes(q)) &&
+      (!q || p.title.toLowerCase().includes(q)) &&
       (!els.year.value || String(p.year) === els.year.value) &&
       (!els.type.value || p.type === els.type.value) &&
       (!els.subtype.value || p.sub_type === els.subtype.value) &&
@@ -48,7 +48,6 @@
         <td>${escapeHtml(p.type)}</td>
         <td>${escapeHtml(p.sub_type)}</td>
         <td><a href="${encodeURI(p.file)}" target="_blank" rel="noopener">PDF</a></td>
-        <td class="summary">${escapeHtml(p.summary)}</td>
       </tr>`;
     }).join("");
 

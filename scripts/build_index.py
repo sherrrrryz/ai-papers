@@ -2,7 +2,7 @@
 """Sync data/papers.json with the PDFs in papers/.
 
 New PDFs get an entry parsed from their file name. Existing entries keep
-any fields edited by hand (summary, type, ...). Entries whose
+any fields edited by hand (title, type, ...). Entries whose
 PDF was removed are dropped. Only the standard library is used.
 
 File name convention (see papers/README.md):
@@ -72,7 +72,6 @@ def main():
                 "id": slugify(pdf.stem),
                 "file": rel,
                 **parsed,
-                "summary": "",
             }
         base, n = entry["id"], 2
         while entry["id"] in used_ids:
