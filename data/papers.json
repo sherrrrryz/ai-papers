@@ -232,6 +232,12 @@
         "subtag": "RQ3 Reading results",
         "key": false,
         "why": "A theory of what interaction asks of chart readers, useful for framing readers without statistics."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "A model of the literacies people need to read and operate interactive visualizations."
       }
     ],
     "citations": 4,
@@ -377,7 +383,20 @@
     "published": "2026-02-10",
     "note": "29 pages, 14 figures, Accepted to CHI 2026",
     "abstract": "Interior design often struggles to capture the subtleties of client experience, leaving gaps between what clients feel and what designers can act upon. We present AIDED, a designer-AI co-design workflow that integrates multimodal client data into generative AI (GAI) design processes. In a within-subjects study with twelve professional designers, we compared four modalities: baseline briefs, gaze heatmaps, questionnaire visualizations, and AI-predicted overlays. Results show that questionnaire data were trusted, creativity-enhancing, and satisfying; gaze heatmaps increased cognitive load; and AI-predicted overlays improved GAI communication but required natural language mediation to establish trust. Interviews confirmed that an authenticity-interpretability trade-off is central to balancing client voices with professional control. Our contributions are: (1) a system that incorporates experiential client signals into GAI design workflows; (2) empirical evidence of how different modalities affect design outcomes; and (3) implications for future AI tools that support human-data interaction in creative practice.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "Gives designers client experience data (gaze heatmaps, questionnaire charts, AI overlays) and compares how each format is trusted and used."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "User behaviour events",
+        "key": false,
+        "why": "Gaze heatmaps of client behaviour given to designers; shows behavioural data can raise cognitive load unless interpreted for them."
+      }
+    ],
     "citations": 4,
     "has_analysis": false
   },
@@ -585,7 +604,14 @@
     "published": "2026-01-27",
     "note": "Accepted to CHI 2026. 17 pages, 16 figures, 5 tables",
     "abstract": "Formal representations of the visualization design space, such as knowledge bases and graphs, consolidate design practices into a shared resource and enable automated reasoning and interpretable design recommendations. However, prior approaches typically depend on fixed, manually authored rules, making it difficult to build novel representations or extend them for different visualization domains. Instead, we propose data-driven methods that automatically synthesize visualization design knowledge bases. Specifically, our methods (1) extract candidate design features from a visualization corpus, (2) select features forward and backward, and (3) render the final knowledge base. In our benchmark evaluation compared to Draco 2, our synthesized knowledge base offers general and interpretable design features and improves the accuracy of predicting effective designs by 1-15% in varied training and test sets. When we apply our approach to genomics visualization, the synthesized knowledge base includes sensible features with accuracy up to 97%, demonstrating the applicability of our approach to other visualization domains.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "Automatically learns visualization design rules from a corpus to recommend effective charts."
+      }
+    ],
     "citations": 2,
     "has_analysis": false
   },
@@ -623,6 +649,12 @@
         "subtag": "Verifying AI analysis",
         "key": false,
         "why": "Plants misinformation and measures who catches it, the same method as your \"planted trap\" evaluation."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "User behaviour events",
+        "key": true,
+        "why": "Clusters interaction-log behaviour to find which user actions signal overreliance on an LLM."
       }
     ],
     "citations": 14,
@@ -1196,7 +1228,14 @@
     "published": "2024-12-10",
     "note": "16 pages, 11 figures. Accepted to ACM CHI 2026",
     "abstract": "Visualization authoring is an iterative process requiring users to adjust parameters to achieve desired aesthetics. Due to its complexity, users often create defective visualizations and struggle to fix them. Many seek help on forums (e.g., Stack Overflow), while others turn to AI, yet little is known about the strengths and limitations of these approaches, or how they can be effectively combined. We analyze Vega-Lite debugging cases from Stack Overflow, categorizing question types by askers, evaluating human responses, and assessing AI performance. Guided by these findings, we design a human-AI co-debugging system that combines LLM-generated suggestions with forum knowledge. We evaluated this system in a user study on 36 unresolved problems, comparing it with forum answers and LLM baselines. Our results show that while forum contributors provide accurate but slow solutions and LLMs offer immediate but sometimes misaligned guidance, the hybrid system resolves 86% of cases, higher than either alone.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "How people debug broken charts with forum help and with AI, and a human-AI co-debugging system."
+      }
+    ],
     "citations": 9,
     "has_analysis": false
   },
@@ -1628,7 +1667,14 @@
     "published": "2026-04-02",
     "note": "Accepted at CHI 2026 (Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems)",
     "abstract": "Data storytelling workflows ask learners to integrate analytical, design, and narrative skills, but instructors rarely have the capacity to provide detailed feedback at each step. Computational and AI-assisted storytelling offers opportunities to support student learning, but how feedback should be structured effectively remains unclear. To address this gap, we conducted a two-phase participatory design study. Through participant observations (N=8) and interviews (N=6), the first phase explored learners and educators' feedback needs and challenges in a data storytelling course. The second phase conducted two design workshops (N=8/10) to design and evaluate feedback strategies (frequency, seamlessness, accountability) for Story Studio: an AI-assisted narrative storytelling application. Our findings show that participants perceived on-demand and process feedback modes as effective, but automatic and outcome feedback as slightly more persuasive. We discuss implications for designing AI-augmented storytelling systems that adapt their feedback modes to the diverse needs and expectations of students.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "What feedback learners need when turning analysis into data stories."
+      }
+    ],
     "citations": 1,
     "has_analysis": false
   },
@@ -1644,7 +1690,20 @@
     "published": "2026-01-21",
     "note": "Accepted by ACM CHI 2026",
     "abstract": "Web AI agents such as ChatGPT Agent and GenSpark are increasingly used for routine web-based tasks, yet they still rely on text-based input prompts, lack proactive detection of user intent, and offer no support for interactive data analysis and decision making. We present WebSeek, a mixed-initiative browser extension that enables users to discover and extract information from webpages to then flexibly build, transform, and refine tangible data artifacts-such as tables, lists, and visualizations-all within an interactive canvas. Within this environment, users can perform analysis-including data transformations such as joining tables or creating visualizations-while an in-built AI both proactively offers context-aware guidance and automation, and reactively responds to explicit user requests. An exploratory user study (N=15) with WebSeek as a probe reveals participants' diverse analysis strategies, underscoring their desire for transparency and control during human-AI collaboration.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": true,
+        "why": "An AI-assisted canvas where users build tables and charts from web data, with the AI proactively suggesting analysis steps."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "AI hypotheses from product & data",
+        "key": false,
+        "why": "AI proactively proposes analysis steps while the user explores data."
+      }
+    ],
     "citations": 4,
     "has_analysis": false
   },
@@ -1840,6 +1899,12 @@
         "subtag": "RQ3 Reading results",
         "key": true,
         "why": "An uncertainty visualization that helps non-experts decide under many variables, similar to segments and guardrails."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": true,
+        "why": "An uncertainty visualization that helps non-experts make decisions across many variables."
       }
     ],
     "citations": 0,
@@ -2263,6 +2328,12 @@
         "subtag": "RQ1 Planning",
         "key": false,
         "why": "AI in PM concept testing: agents match the population distribution but miss on individuals. Useful caution on AI-inferred user intent."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "AI hypotheses from product & data",
+        "key": true,
+        "why": "AI agents built from user interviews evaluate product concepts; accurate for the population, not for individuals."
       }
     ],
     "citations": 1,
@@ -2341,6 +2412,12 @@
         "subtag": "RQ1 Planning",
         "key": false,
         "why": "Infers the user's goal from behaviour and steers the AI with it, comparable to inferring the hypothesis from a code diff."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "User behaviour events",
+        "key": false,
+        "why": "Infers a user's goal by passively observing their behaviour, then steers the AI with it."
       }
     ],
     "citations": 25,
@@ -2883,6 +2960,12 @@
         "subtag": "RQ3 Reading results",
         "key": false,
         "why": "How professionals design charts for lay audiences."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": true,
+        "why": "How professionals design charts for lay audiences, including whether to show uncertainty."
       }
     ],
     "citations": 2,
@@ -3194,6 +3277,12 @@
         "subtag": "Verifying AI analysis",
         "key": false,
         "why": "Recommendation-style AI lowers people's evidence threshold even when accuracy stays the same, which argues for presenting the AI inference as a hypothesis to test."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "AI hypotheses from product & data",
+        "key": false,
+        "why": "Compares AI that presents hypotheses with AI that presents recommendations; recommendations lowered people's evidence threshold."
       }
     ],
     "citations": 1,
@@ -3467,7 +3556,14 @@
     "published": "2025-10-14",
     "note": "CHI 2026",
     "abstract": "Accessibility checkers are tools in support of accessible app development, and their use is encouraged by accessibility best practices. However, most current checkers evaluate static or mechanically-generated contexts, failing to capture common accessibility errors impacting mobile app functionality. In this work, we define functiona11ity errors as accessibility barriers that only manifest through interaction (i.e., named according to a blend of \"functionality\" and \"accessibility\"). We introduce TaskAudit, which comprises three components: a Task Generator that constructs interactive tasks from app screens, a Task Executor that uses agents with a screen reader proxy to perform these tasks, and an Accessibility Analyzer that detects and reports accessibility errors by examining interaction traces. Our evaluation on real-world apps shows that TaskAudit detects 48 functiona11ity errors from 54 app screens, compared to between 4 and 20 with existing checkers. Our analysis demonstrates common error patterns that TaskAudit can detect in addition to those from prior work, including label-functionality mismatch, cluttered navigation, and inappropriate feedback.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "User behaviour events",
+        "key": false,
+        "why": "Agents execute tasks on app screens and analyse the interaction traces to find errors that only show up when using the app."
+      }
+    ],
     "citations": 4,
     "has_analysis": false
   },
@@ -4720,7 +4816,26 @@
     "published": "2025-02-25",
     "note": "accepted by CHI 2025",
     "abstract": "Understanding collaborative writing dynamics between native speakers (NS) and non-native speakers (NNS) is critical for enhancing collaboration quality and team inclusivity. In this paper, we partnered with communication researchers to develop visual analytics solutions for comparing NS and NNS behaviors in 162 writing sessions across 27 teams. The primary challenges in analyzing writing behaviors are data complexity and the uncertainties introduced by automated methods. In response, we present \\textsc{COALA}, a novel visual analytics tool that improves model interpretability by displaying uncertainties in author clusters, generating behavior summaries using large language models, and visualizing writing-related actions at multiple granularities. We validated the effectiveness of \\textsc{COALA} through user studies with domain experts (N=2+2) and researchers with relevant experience (N=8). We present the insights discovered by participants using \\textsc{COALA}, suggest features for future AI-assisted collaborative writing tools, and discuss the broader implications for analyzing collaborative processes beyond writing.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "Visual analytics of writing-behaviour logs that displays model uncertainty and uses LLM-written behaviour summaries."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "User behaviour events",
+        "key": false,
+        "why": "Analyses fine-grained writing-action logs across 162 sessions to compare two groups' behaviour."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "AI hypotheses from product & data",
+        "key": false,
+        "why": "LLM-generated summaries of behaviour clusters help researchers form insights from usage logs."
+      }
+    ],
     "citations": 5,
     "has_analysis": false
   },
@@ -5484,7 +5599,20 @@
     "published": "2025-04-22",
     "note": "Accepted to CHI 2025, in press. See the project page at mediacontentatlas.github.io",
     "abstract": "As digital media use continues to evolve and influence various aspects of life, developing flexible and scalable tools to study complex media experiences is essential. This study introduces the Media Content Atlas (MCA), a novel pipeline designed to help researchers investigate large-scale screen data beyond traditional screen-use metrics. Leveraging multimodal large language models (MLLMs), MCA enables moment-by-moment content analysis, content-based clustering, topic modeling, image retrieval, and interactive visualizations. Evaluated on 1.12 million smartphone screenshots continuously captured during screen use from 112 adults over an entire month, MCA facilitates open-ended exploration and hypothesis generation as well as hypothesis-driven investigations at an unprecedented scale. Expert evaluators underscored its usability and potential for research and intervention design, with clustering results rated 96% relevant and descriptions 83% accurate. By bridging methodological possibilities with domain-specific needs, MCA accelerates both inductive and deductive inquiry, presenting new opportunities for media and HCI research.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "User behaviour events",
+        "key": true,
+        "why": "Turns 1.12M screenshots of real usage into clusters and visualizations to generate and test hypotheses about behaviour."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "AI hypotheses from product & data",
+        "key": true,
+        "why": "MLLM pipeline over large-scale usage data built explicitly for open-ended hypothesis generation and hypothesis-driven checks."
+      }
+    ],
     "citations": 4,
     "has_analysis": false
   },
@@ -5859,7 +5987,14 @@
     "published": "2025-02-28",
     "note": "Accepted at CHI 2025",
     "abstract": "Judging the similarity of visualizations is crucial to various applications, such as visualization-based search and visualization recommendation systems. Recent studies show deep-feature-based similarity metrics correlate well with perceptual judgments of image similarity and serve as effective loss functions for tasks like image super-resolution and style transfer. We explore the application of such metrics to judgments of visualization similarity. We extend a similarity metric using five ML architectures and three pre-trained weight sets. We replicate results from previous crowd-sourced studies on scatterplot and visual channel similarity perception. Notably, our metric using pre-trained ImageNet weights outperformed gradient-descent tuned MS-SSIM, a multi-scale similarity metric based on luminance, contrast, and structure. Our work contributes to understanding how deep-feature-based metrics can enhance similarity assessments in visualization, potentially improving visual analysis tools and techniques. Supplementary materials are available at https://osf.io/dj2ms.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "Deep-feature metrics for judging how similar two visualizations look, used for chart recommendation."
+      }
+    ],
     "citations": 3,
     "has_analysis": false
   },
@@ -5875,7 +6010,14 @@
     "published": "2025-01-17",
     "note": "Accepted to CHI 2025",
     "abstract": "Healthcare simulations help learners develop teamwork and clinical skills in a risk-free setting, promoting reflection on real-world practices through structured debriefs. However, despite video's potential, it is hard to use, leaving a gap in providing concise, data-driven summaries for supporting effective debriefing. Addressing this, we present TeamVision, an AI-powered multimodal learning analytics (MMLA) system that captures voice presence, automated transcriptions, body rotation, and positioning data, offering educators a dashboard to guide debriefs immediately after simulations. We conducted an in-the-wild study with 56 teams (221 students) and recorded debriefs led by six teachers using TeamVision. Follow-up interviews with 15 students and five teachers explored perceptions of its usefulness, accuracy, and trustworthiness. This paper examines: i) how TeamVision was used in debriefing, ii) what educators found valuable and challenging, and iii) perceptions of its effectiveness. Results suggest TeamVision enables flexible debriefing and highlights the challenges and implications of using AI-powered systems in healthcare simulation.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "User behaviour events",
+        "key": false,
+        "why": "Turns captured behaviour data (speech, position, orientation) into a dashboard that educators read and judge for trust."
+      }
+    ],
     "citations": 26,
     "has_analysis": false
   },
@@ -6376,7 +6518,14 @@
     "published": "2023-10-10",
     "note": "Accepted to CHI 2024",
     "abstract": "Macros are building block tasks of our everyday smartphone activity (e.g., \"login\", or \"booking a flight\"). Effectively extracting macros is important for understanding mobile interaction and enabling task automation. These macros are however difficult to extract at scale as they can be comprised of multiple steps yet hidden within programmatic components of mobile apps. In this paper, we introduce a novel approach based on Large Language Models (LLMs) to automatically extract semantically meaningful macros from both random and user-curated mobile interaction traces. The macros produced by our approach are automatically tagged with natural language descriptions and are fully executable. We conduct multiple studies to validate the quality of extracted macros, including user evaluation, comparative analysis against human-curated tasks, and automatic execution of these macros. These experiments and analyses show the effectiveness of our approach and the usefulness of extracted macros in various downstream applications.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "User behaviour events",
+        "key": false,
+        "why": "Uses an LLM to turn raw mobile interaction traces into named, executable task steps (\"login\", \"book a flight\")."
+      }
+    ],
     "citations": 20,
     "has_analysis": false
   },
@@ -6472,7 +6621,14 @@
     "published": "2024-02-25",
     "note": "CHI 2024. 12 pages/9 figures",
     "abstract": "Quality colormaps can help communicate important data patterns. However, finding an aesthetically pleasing colormap that looks \"just right\" for a given scenario requires significant design and technical expertise. We introduce Cieran, a tool that allows any data analyst to rapidly find quality colormaps while designing charts within Jupyter Notebooks. Our system employs an active preference learning paradigm to rank expert-designed colormaps and create new ones from pairwise comparisons, allowing analysts who are novices in color design to tailor colormaps to their data context. We accomplish this by treating colormap design as a path planning problem through the CIELAB colorspace with a context-specific reward model. In an evaluation with twelve scientists, we found that Cieran effectively modeled user preferences to rank colormaps and leveraged this model to create new quality designs. Our work shows the potential of active preference learning for supporting efficient visualization design optimization.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "Helps analysts who are not color experts pick good colormaps for charts in notebooks."
+      }
+    ],
     "citations": 5,
     "has_analysis": false
   },
@@ -6504,7 +6660,14 @@
     "published": "2024-04-18",
     "note": "To appear at CHI 2024",
     "abstract": "Data analysts have long sought to turn unstructured text data into meaningful concepts. Though common, topic modeling and clustering focus on lower-level keywords and require significant interpretative work. We introduce concept induction, a computational process that instead produces high-level concepts, defined by explicit inclusion criteria, from unstructured text. For a dataset of toxic online comments, where a state-of-the-art BERTopic model outputs \"women, power, female,\" concept induction produces high-level concepts such as \"Criticism of traditional gender roles\" and \"Dismissal of women's concerns.\" We present LLooM, a concept induction algorithm that leverages large language models to iteratively synthesize sampled text and propose human-interpretable concepts of increasing generality. We then instantiate LLooM in a mixed-initiative text analysis tool, enabling analysts to shift their attention from interpreting topics to engaging in theory-driven analysis. Through technical evaluations and four analysis scenarios ranging from literature review to content moderation, we find that LLooM's concepts improve upon the prior art of topic models in terms of quality and data coverage. In expert case studies, LLooM helped researchers to uncover new insights even from familiar datasets, for example by suggesting a previously unnoticed concept of attacks on out-party stances in a political social media dataset.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "AI hypotheses from product & data",
+        "key": false,
+        "why": "LLM proposes high-level, human-checkable concepts from unstructured data, a way of surfacing patterns to investigate."
+      }
+    ],
     "citations": 158,
     "has_analysis": false
   },
@@ -6526,6 +6689,12 @@
         "subtag": "RQ3 Reading results",
         "key": false,
         "why": "Lay readers' heuristics versus statistical rationality when reading charts."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": true,
+        "why": "How lay readers draw conclusions from charts compared with statistical models; they resist misleading small-sample extremes."
       }
     ],
     "citations": 0,
@@ -6668,6 +6837,12 @@
         "subtag": "RQ2 Communicating",
         "key": false,
         "why": "Measures whether the audience sees what the author intended, a method for your restatement-accuracy measure."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": true,
+        "why": "Measures whether readers take away the message a chart's designer intended; only 41% of responses matched."
       }
     ],
     "citations": 57,
@@ -7174,6 +7349,12 @@
         "subtag": "Verifying AI analysis",
         "key": true,
         "why": "Your Gu et al. anchor: a design probe for how analysts check AI-generated analyses, which your designers would need without the coding background."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "AI hypotheses from product & data",
+        "key": true,
+        "why": "How analysts check AI-generated data analyses for correctness."
       }
     ],
     "citations": 74,
@@ -7197,6 +7378,12 @@
         "subtag": "Verifying AI analysis",
         "key": true,
         "why": "The \"analysts responding to AI assistance\" paper in your table; it covers AI help with analysis *planning*, which is close to your RQ1."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "AI hypotheses from product & data",
+        "key": true,
+        "why": "AI suggests analysis-planning steps (what to test, which variables) to data analysts; how they take them up."
       }
     ],
     "citations": 67,
@@ -7843,7 +8030,14 @@
     "published": "2022-10-25",
     "note": "CHI 2024",
     "abstract": "Code-recommendation systems, such as Copilot and CodeWhisperer, have the potential to improve programmer productivity by suggesting and auto-completing code. However, to fully realize their potential, we must understand how programmers interact with these systems and identify ways to improve that interaction. To seek insights about human-AI collaboration with code recommendations systems, we studied GitHub Copilot, a code-recommendation system used by millions of programmers daily. We developed CUPS, a taxonomy of common programmer activities when interacting with Copilot. Our study of 21 programmers, who completed coding tasks and retrospectively labeled their sessions with CUPS, showed that CUPS can help us understand how programmers interact with code-recommendation systems, revealing inefficiencies and time costs. Our insights reveal how programmers interact with Copilot and motivate new interface designs and metrics.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "User behaviour events",
+        "key": true,
+        "why": "Models programmers' behaviour from Copilot telemetry and shows why a single event metric (acceptance rate) misleads."
+      }
+    ],
     "citations": 247,
     "has_analysis": false
   },
@@ -7987,7 +8181,14 @@
     "published": "2023-05-04",
     "note": "Accepted at CHI 2024 (Late-Breaking Work). 17 pages, 11 figures, 1 table. SuperNOVA is available at: http://poloclub.github.io/supernova/. The code is available at: https://github.com/poloclub/supernova",
     "abstract": "Computational notebooks, such as Jupyter Notebook, have become data scientists' de facto programming environments. Many visualization researchers and practitioners have developed interactive visualization tools that support notebooks, yet little is known about the appropriate design of these tools. To address this critical research gap, we investigate the design strategies in this space by analyzing 163 notebook visualization tools. Our analysis encompasses 64 systems from academic papers and 105 systems sourced from a pool of 55k notebooks containing interactive visualizations that we obtain via scraping 8.6 million notebooks on GitHub. Through this study, we identify key design implications and trade-offs, such as leveraging multimodal data in notebooks as well as balancing the degree of visualization-notebook integration. Furthermore, we provide empirical evidence that tools compatible with more notebook platforms have a greater impact. Finally, we develop SuperNOVA, an open-source interactive browser to help researchers explore existing notebook visualization tools. SuperNOVA is publicly accessible at: https://poloclub.github.io/supernova/.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "Design strategies from 163 interactive visualization tools for computational notebooks."
+      }
+    ],
     "citations": 16,
     "has_analysis": false
   },
@@ -8266,7 +8467,14 @@
     "published": "2024-02-29",
     "note": "ACM CHI 2024",
     "abstract": "We present Umwelt, an authoring environment for interactive multimodal data representations. In contrast to prior approaches, which center the visual modality, Umwelt treats visualization, sonification, and textual description as coequal representations: they are all derived from a shared abstract data model, such that no modality is prioritized over the others. To simplify specification, Umwelt evaluates a set of heuristics to generate default multimodal representations that express a dataset's functional relationships. To support smoothly moving between representations, Umwelt maintains a shared query predicated that is reified across all modalities -- for instance, navigating the textual description also highlights the visualization and filters the sonification. In a study with 5 blind / low-vision expert users, we found that Umwelt's multimodal representations afforded complementary overview and detailed perspectives on a dataset, allowing participants to fluidly shift between task- and representation-oriented ways of thinking.",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "Keeps a chart, a text description and a sonification in sync from one data model; accessible data representation."
+      }
+    ],
     "citations": 36,
     "has_analysis": false
   },
@@ -8407,6 +8615,12 @@
         "subtag": "RQ3 Reading results",
         "key": false,
         "why": "A survey of AI tools that turn data into narrative, the space your results view sits in."
+      },
+      {
+        "tag": "Focus topics",
+        "subtag": "Data visualization",
+        "key": false,
+        "why": "Survey of AI tools that turn data into visual stories, organized by workflow stage and the AI's role."
       }
     ],
     "citations": 94,

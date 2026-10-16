@@ -183,5 +183,148 @@
         }
       }
     }
+  },
+  "Focus topics": {
+    "description": "Papers directly about data visualization, user behaviour event data, and AI generating hypotheses from product and data (16 Oct 2026).",
+    "subtags": {
+      "Data visualization": {
+        "2402.15605": {
+          "key": true,
+          "why": "Measures whether readers take away the message a chart's designer intended; only 41% of responses matched."
+        },
+        "2310.01935": {
+          "key": true,
+          "why": "How professionals design charts for lay audiences, including whether to show uncertainty."
+        },
+        "2602.09631": {
+          "key": false,
+          "why": "A model of the literacies people need to read and operate interactive visualizations."
+        },
+        "2411.12299": {
+          "key": true,
+          "why": "How lay readers draw conclusions from charts compared with statistical models; they resist misleading small-sample extremes."
+        },
+        "2603.22766": {
+          "key": true,
+          "why": "An uncertainty visualization that helps non-experts make decisions across many variables."
+        },
+        "2601.15100": {
+          "key": true,
+          "why": "An AI-assisted canvas where users build tables and charts from web data, with the AI proactively suggesting analysis steps."
+        },
+        "2412.07673": {
+          "key": false,
+          "why": "How people debug broken charts with forum help and with AI, and a human-AI co-debugging system."
+        },
+        "2601.19237": {
+          "key": false,
+          "why": "Automatically learns visualization design rules from a corpus to recommend effective charts."
+        },
+        "2503.00228": {
+          "key": false,
+          "why": "Deep-feature metrics for judging how similar two visualizations look, used for chart recommendation."
+        },
+        "2402.15997": {
+          "key": false,
+          "why": "Helps analysts who are not color experts pick good colormaps for charts in notebooks."
+        },
+        "2403.00106": {
+          "key": false,
+          "why": "Keeps a chart, a text description and a sonification in sync from one data model; accessible data representation."
+        },
+        "2305.03039": {
+          "key": false,
+          "why": "Design strategies from 163 interactive visualization tools for computational notebooks."
+        },
+        "2309.15723": {
+          "key": false,
+          "why": "Survey of AI tools that turn data into visual stories, organized by workflow stage and the AI's role."
+        },
+        "2605.16271": {
+          "key": false,
+          "why": "What feedback learners need when turning analysis into data stories."
+        },
+        "2502.18681": {
+          "key": false,
+          "why": "Visual analytics of writing-behaviour logs that displays model uncertainty and uses LLM-written behaviour summaries."
+        },
+        "2602.10054": {
+          "key": false,
+          "why": "Gives designers client experience data (gaze heatmaps, questionnaire charts, AI overlays) and compares how each format is trusted and used."
+        }
+      },
+      "User behaviour events": {
+        "2210.14306": {
+          "key": true,
+          "why": "Models programmers' behaviour from Copilot telemetry and shows why a single event metric (acceptance rate) misleads."
+        },
+        "2504.16323": {
+          "key": true,
+          "why": "Turns 1.12M screenshots of real usage into clusters and visualizations to generate and test hypotheses about behaviour."
+        },
+        "2602.11567": {
+          "key": true,
+          "why": "Clusters interaction-log behaviour to find which user actions signal overreliance on an LLM."
+        },
+        "2510.14591": {
+          "key": false,
+          "why": "Infers a user's goal by passively observing their behaviour, then steers the AI with it."
+        },
+        "2310.07023": {
+          "key": false,
+          "why": "Uses an LLM to turn raw mobile interaction traces into named, executable task steps (\"login\", \"book a flight\")."
+        },
+        "2510.12972": {
+          "key": false,
+          "why": "Agents execute tasks on app screens and analyse the interaction traces to find errors that only show up when using the app."
+        },
+        "2501.09930": {
+          "key": false,
+          "why": "Turns captured behaviour data (speech, position, orientation) into a dashboard that educators read and judge for trust."
+        },
+        "2602.10054": {
+          "key": false,
+          "why": "Gaze heatmaps of client behaviour given to designers; shows behavioural data can raise cognitive load unless interpreted for them."
+        },
+        "2502.18681": {
+          "key": false,
+          "why": "Analyses fine-grained writing-action logs across 162 sessions to compare two groups' behaviour."
+        }
+      },
+      "AI hypotheses from product & data": {
+        "2309.10108": {
+          "key": true,
+          "why": "AI suggests analysis-planning steps (what to test, which variables) to data analysts; how they take them up."
+        },
+        "2504.16323": {
+          "key": true,
+          "why": "MLLM pipeline over large-scale usage data built explicitly for open-ended hypothesis generation and hypothesis-driven checks."
+        },
+        "2603.29890": {
+          "key": true,
+          "why": "AI agents built from user interviews evaluate product concepts; accurate for the population, not for individuals."
+        },
+        "2309.10947": {
+          "key": true,
+          "why": "How analysts check AI-generated data analyses for correctness."
+        },
+        "2404.12259": {
+          "key": false,
+          "why": "LLM proposes high-level, human-checkable concepts from unstructured data, a way of surfacing patterns to investigate."
+        },
+        "2603.15824": {
+          "key": false,
+          "why": "Compares AI that presents hypotheses with AI that presents recommendations; recommendations lowered people's evidence threshold."
+        },
+        "2601.15100": {
+          "key": false,
+          "why": "AI proactively proposes analysis steps while the user explores data."
+        },
+        "2502.18681": {
+          "key": false,
+          "why": "LLM-generated summaries of behaviour clusters help researchers form insights from usage logs."
+        }
+      }
+    }
   }
 }
