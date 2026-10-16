@@ -3,6 +3,7 @@
 // where Ollama is installed and running. Nothing is sent anywhere else.
 window.AskAI = (function () {
   const DEFAULT_URL = "http://localhost:11434";
+  const BRIDGE_URL = "http://localhost:11435"; // scripts/ollama_bridge.py
   const QUICK = [
     ["Summarize", "Summarize this paper in 5 bullet points."],
     ["Key methods", "What methods did the authors use? Be specific about participants, data and analysis."],
@@ -11,14 +12,15 @@ window.AskAI = (function () {
   ];
   const RELATE = ["Relate to my experiment", "How does this paper relate to my experiment proposal? Point to what I could use and where it differs."];
 
-  let paper, article, tagInfo = {}, history = [], controller = null, quote = "";
+  let paper, article, tagInfo = {}, history = [], controller = null, quote = "", activeUrl = null;
   let panel, log, input, form, sendBtn, statusEl, modelSel, quoteEl, toggleBtn;
 
   const pref = (k, v) => {
     try { if (v === undefined) return localStorage.getItem(`askai:${k}`); localStorage.setItem(`askai:${k}`, v); } catch {}
     return null;
   };
-  const baseUrl = () => (pref("url") || DEFAULT_URL).replace(/\/+$/, "");
+  const savedUrl = () => (pref("url") || "").replace(/\/+$/, "");
+  const baseUrl = () => activeUrl || savedUrl() || DEFAULT_URL;
   const el = (tag, props = {}, ...kids) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
 
   function systemPrompt() {
@@ -36,15 +38,24 @@ window.AskAI = (function () {
 
   async function checkConnection() {
     setStatus("Connecting…", "");
+    // With no address saved, try Ollama itself, then the bridge.
+    let models = null;
+    for (const url of savedUrl() ? [savedUrl()] : [DEFAULT_URL, BRIDGE_URL]) {
+      try {
+        const r = await fetch(`${url}/api/tags`);
+        if (!r.ok) continue;
+        models = (await r.json()).models || [];
+        activeUrl = url;
+        break;
+      } catch {}
+    }
     try {
-      const r = await fetch(`${baseUrl()}/api/tags`);
-      if (!r.ok) throw new Error(r.status);
-      const { models = [] } = await r.json();
+      if (!models) throw new Error("unreachable");
       const saved = pref("model");
       modelSel.replaceChildren(...models.map((m) => el("option", { value: m.name, textContent: m.name })));
       if (!models.length) return setStatus("Ollama is running but has no models. Run: ollama pull qwen3:4b", "warn");
       modelSel.value = models.some((m) => m.name === saved) ? saved : models[0].name;
-      setStatus("Ollama connected", "ok");
+      setStatus(activeUrl === BRIDGE_URL ? "Ollama connected (via bridge)" : "Ollama connected", "ok");
       return true;
     } catch {
       setStatus("Can't reach Ollama. See setup below.", "err");
@@ -62,7 +73,7 @@ window.AskAI = (function () {
     help.innerHTML = DOMPurify.sanitize(marked.parse([
       "**The AI needs Ollama running on this computer.**",
       "1. Install and open Ollama from ollama.com, then download a model, for example `ollama pull qwen3:4b`.",
-      onSite ? `2. Let this site talk to Ollama (one time), then quit and reopen Ollama:\n\n   \`launchctl setenv OLLAMA_ORIGINS "${location.origin}"\`` : "",
+      onSite ? `2. Let this site talk to Ollama (one time), then quit and reopen Ollama:\n\n   \`launchctl setenv OLLAMA_ORIGINS "${location.origin}"\`\n\n   Or, if Ollama runs under another Mac account, start the bridge instead: \`python3 scripts/ollama_bridge.py\`` : "",
       "Phones and other people's computers can't use your Ollama, so the panel won't work there.",
     ].filter(Boolean).join("\n\n")));
     help.append(el("button", { type: "button", textContent: "Try again", onclick: () => checkConnection().then((ok) => ok && help.remove()) }));
@@ -172,8 +183,8 @@ window.AskAI = (function () {
     statusEl = el("span", { className: "ai-status" });
     modelSel = el("select", { title: "Model", onchange: () => pref("model", modelSel.value) });
     const think = el("input", { type: "checkbox", checked: pref("think") === "1", onchange: () => pref("think", think.checked ? "1" : "0") });
-    const urlInput = el("input", { type: "url", value: baseUrl(), placeholder: DEFAULT_URL });
-    urlInput.addEventListener("change", () => { pref("url", urlInput.value.trim() || DEFAULT_URL); checkConnection(); });
+    const urlInput = el("input", { type: "url", value: savedUrl(), placeholder: "Automatic" });
+    urlInput.addEventListener("change", () => { pref("url", urlInput.value.trim()); activeUrl = null; checkConnection(); });
 
     const settings = el("details", { className: "ai-settings" },
       el("summary", { textContent: "Settings" }),
