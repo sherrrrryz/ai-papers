@@ -6,16 +6,20 @@ A static website listing AI-related CHI papers in one filterable, sortable table
 
 | Path | What it is |
 | --- | --- |
-| `papers/` | The PDFs. File names follow `<year>_<type>_<sub type>_<title>.pdf` (see `papers/README.md`). |
-| `data/papers.json` | The table's data, generated from the PDFs. Hand edits (title, type, …) are kept on rebuild. |
+| `data/papers.csv` | The paper list imported from the spreadsheet. Edit it to fix a type or sub type. |
+| `papers/` | Optional extra PDFs. File names follow `<year>_<type>_<sub type>_<title>.pdf` (see `papers/README.md`). |
+| `data/papers.json` | The table's data, generated from the CSV and the PDFs. Don't edit by hand. |
 | `analyses/<id>.md` | Analysis for one paper, shown at `paper.html?id=<id>`. |
-| `scripts/build_index.py` | Syncs `data/papers.json` with `papers/`. Standard library only. |
+| `scripts/import_xlsx.py` | Imports a spreadsheet into `data/papers.csv`. Needs `openpyxl`. |
+| `scripts/build_index.py` | Builds `data/papers.json`. Standard library only. |
 | `index.html`, `paper.html`, `assets/` | The site. |
 
 ## Adding papers
 
-1. Add PDFs to `papers/` and push (or upload them on GitHub).
-2. The GitHub Actions workflow runs `scripts/build_index.py`, commits the updated `data/papers.json`, and deploys the site to GitHub Pages.
+- **From a spreadsheet:** `python3 scripts/import_xlsx.py papers.xlsx`. Type is inferred from the CHI note (workshop, LBW, poster, …) and sub type from topic keywords in the title and abstract. Rows already in the CSV keep their type and sub type.
+- **Single PDFs:** add them to `papers/`.
+
+Then push. The GitHub Actions workflow runs `scripts/build_index.py`, commits the updated `data/papers.json`, and deploys the site to GitHub Pages.
 
 To run locally:
 

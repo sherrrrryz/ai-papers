@@ -15,11 +15,31 @@
       [p.year, p.type, p.sub_type].filter(Boolean).forEach((v) => {
         meta.append(Object.assign(document.createElement("span"), { textContent: v }));
       });
-      meta.append(Object.assign(document.createElement("a"), { href: encodeURI(p.file), textContent: "PDF", target: "_blank", rel: "noopener" }));
+      const link = (href, text) => Object.assign(document.createElement("a"), { href: encodeURI(href), textContent: text, target: "_blank", rel: "noopener" });
+      meta.append(link(p.pdf, "PDF"));
+      if (p.url) meta.append(link(p.url, "arXiv"));
+      document.getElementById("authors").textContent = p.authors || "";
 
+      const about = document.createElement("section");
+      if (p.note) about.append(Object.assign(document.createElement("p"), { className: "note", textContent: p.note }));
+      if (p.abstract) {
+        about.append(Object.assign(document.createElement("h2"), { textContent: "Abstract" }));
+        about.append(Object.assign(document.createElement("p"), { textContent: p.abstract }));
+      }
+
+      if (!p.has_analysis) {
+        article.replaceChildren(about);
+        article.append(Object.assign(document.createElement("p"), { className: "empty", textContent: "No in-depth analysis yet." }));
+        return;
+      }
       return fetch(`analyses/${encodeURIComponent(id)}.md`, { cache: "no-cache" }).then((r) => {
-        if (!r.ok) return show("This paper has not been analyzed yet.");
-        return r.text().then((md) => { article.innerHTML = DOMPurify.sanitize(marked.parse(md)); });
+        if (!r.ok) return article.replaceChildren(about);
+        return r.text().then((md) => {
+          const analysis = document.createElement("section");
+          analysis.className = "analysis-body";
+          analysis.innerHTML = DOMPurify.sanitize(marked.parse(md));
+          article.replaceChildren(analysis, about);
+        });
       });
     })
     .catch(() => show("Could not load the analysis."));

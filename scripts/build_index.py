@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Sync data/papers.json with the PDFs in papers/.
+"""Build data/papers.json from data/papers.csv and the PDFs in papers/.
 
-New PDFs get an entry parsed from their file name. Existing entries keep
-any fields edited by hand (title, type, ...). Entries whose
-PDF was removed are dropped. Only the standard library is used.
+data/papers.csv holds the papers imported from the spreadsheet (see
+scripts/import_xlsx.py); edit it to correct a type or sub type.
+PDFs dropped into papers/ are added too: new ones get an entry parsed from
+their file name, and existing entries keep fields edited by hand in
+data/papers.json. Only the standard library is used.
 
 File name convention (see papers/README.md):
     <year>_<type>_<sub type>_<title>.pdf
 Anything that does not match still gets an entry, with the year found
 anywhere in the name and the rest used as the title.
 """
+import csv
 import json
 import re
 import sys
@@ -18,6 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PAPERS_DIR = ROOT / "papers"
 DATA_FILE = ROOT / "data" / "papers.json"
+CSV_FILE = ROOT / "data" / "papers.csv"
 ANALYSES_DIR = ROOT / "analyses"
 
 YEAR_RE = re.compile(r"(?<!\d)(19|20)\d{2}(?!\d)")
@@ -58,10 +62,19 @@ def main():
     existing = []
     if DATA_FILE.exists():
         existing = json.loads(DATA_FILE.read_text(encoding="utf-8") or "[]")
-    by_file = {p["file"]: p for p in existing}
+    by_file = {p["file"]: p for p in existing if p.get("file")}
+
+    papers, used_ids = [], set()
+    if CSV_FILE.exists():
+        with CSV_FILE.open(encoding="utf-8", newline="") as f:
+            for row in csv.DictReader(f):
+                row["year"] = int(row["year"]) if row.get("year", "").isdigit() else None
+                papers.append(row)
+                used_ids.add(row["id"])
+    from_csv = len(papers)
 
     pdfs = sorted(p for p in PAPERS_DIR.rglob("*") if p.suffix.lower() == ".pdf")
-    papers, used_ids, added = [], set(), 0
+    added = 0
     for pdf in pdfs:
         rel = pdf.relative_to(ROOT).as_posix()
         entry = by_file.get(rel)
@@ -71,22 +84,25 @@ def main():
             entry = {
                 "id": slugify(pdf.stem),
                 "file": rel,
+                "pdf": rel,
                 **parsed,
             }
+        entry.setdefault("pdf", rel)
         base, n = entry["id"], 2
         while entry["id"] in used_ids:
             entry["id"] = f"{base}-{n}"
             n += 1
         used_ids.add(entry["id"])
-        analysis = ANALYSES_DIR / f"{entry['id']}.md"
-        entry["has_analysis"] = analysis.exists()
         papers.append(entry)
 
-    removed = len(by_file) - (len(papers) - added)
+    for entry in papers:
+        entry["has_analysis"] = (ANALYSES_DIR / f"{entry['id']}.md").exists()
+
+    removed = len(by_file) - (len(papers) - from_csv - added)
     papers.sort(key=lambda p: (-(p.get("year") or 0), p["title"].lower()))
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(json.dumps(papers, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"{len(papers)} papers ({added} added, {removed} removed) -> {DATA_FILE.relative_to(ROOT)}")
+    print(f"{len(papers)} papers ({from_csv} from CSV, {added} new PDFs, {removed} PDFs removed) -> {DATA_FILE.relative_to(ROOT)}")
     return 0
 
 

@@ -31,7 +31,7 @@
   function render() {
     const q = els.search.value.trim().toLowerCase();
     const rows = state.papers.filter((p) =>
-      (!q || p.title.toLowerCase().includes(q)) &&
+      (!q || `${p.title} ${p.authors || ""}`.toLowerCase().includes(q)) &&
       (!els.year.value || String(p.year) === els.year.value) &&
       (!els.type.value || p.type === els.type.value) &&
       (!els.subtype.value || p.sub_type === els.subtype.value) &&
@@ -39,21 +39,21 @@
     ).sort(compare);
 
     els.body.innerHTML = rows.map((p) => {
-      const title = p.has_analysis
-        ? `<a href="paper.html?id=${encodeURIComponent(p.id)}">${escapeHtml(p.title)}</a> <span class="badge">Analysis</span>`
-        : escapeHtml(p.title);
+      const badge = p.has_analysis ? ` <span class="badge">Analysis</span>` : "";
+      const authors = p.authors ? `<div class="authors">${escapeHtml(p.authors)}</div>` : "";
+      const title = `<a href="paper.html?id=${encodeURIComponent(p.id)}">${escapeHtml(p.title)}</a>${badge}${authors}`;
       return `<tr>
         <td class="title">${title}</td>
         <td>${escapeHtml(p.year ?? "")}</td>
         <td>${escapeHtml(p.type)}</td>
         <td>${escapeHtml(p.sub_type)}</td>
-        <td><a href="${encodeURI(p.file)}" target="_blank" rel="noopener">PDF</a></td>
+        <td><a href="${encodeURI(p.pdf)}" target="_blank" rel="noopener">PDF</a></td>
       </tr>`;
     }).join("");
 
     els.count.textContent = `Showing ${rows.length} of ${state.papers.length}.`;
     els.empty.hidden = rows.length > 0;
-    els.empty.textContent = state.papers.length ? "No papers match these filters." : "No papers yet. Add PDFs to the papers folder.";
+    els.empty.textContent = state.papers.length ? "No papers match these filters." : "No papers yet.";
 
     document.querySelectorAll("th.sortable").forEach((th) => {
       const active = th.dataset.key === state.sortKey;
