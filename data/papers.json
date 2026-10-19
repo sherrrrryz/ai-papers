@@ -936,7 +936,7 @@
     "note": "CHI 2026",
     "abstract": "This paper introduces CoBRA, a novel toolkit for systematically specifying agent behavior in LLM-based social simulation. We found that conventional approaches that specify agent behavior through implicit natural-language descriptions often do not yield consistent behavior across models, and the resulting behavior does not capture the nuances of the descriptions. In contrast, CoBRA introduces a model-agnostic way to control agent behavior that lets researchers explicitly specify desired nuances and obtain consistent behavior across models. At the heart of CoBRA is a novel closed-loop system primitive with two components: (1) Cognitive Bias Index that measures the demonstrated cognitive bias of a social agent, by quantifying the agent's reactions in a set of validated classic social science experiments; (2) Behavioral Regulation Engine that aligns the agent's behavior to exhibit controlled cognitive bias. Through CoBRA, we show how to operationalize validated social science knowledge (i.e., classical experiments) as reusable \"gym\" environments for AI -- an approach that may generalize to richer social and affective simulations beyond bias alone.",
     "tags": [],
-    "citations": 11,
+    "citations": 12,
     "has_analysis": false
   },
   {
@@ -2019,7 +2019,7 @@
     "note": "This version has been conditionally accepted at CHI 2026",
     "abstract": "People's transportation choices reflect complex trade-offs shaped by personal preferences, social norms, and technology acceptance. Predicting such behavior at scale is a critical challenge with major implications for urban planning and sustainable transport. Traditional methods use handcrafted assumptions and costly data collection, making them impractical for early-stage evaluations of new technologies or policies. We introduce Generative Traffic Agents (GTA) for simulating large-scale, context-sensitive transportation choices using LLM-powered, persona-based agents. GTA generates artificial populations from census-based sociodemographic data. It simulates activity schedules and mode choices, enabling scalable, human-like simulations without handcrafted rules. We evaluate GTA in Berlin-scale experiments, comparing simulation results against empirical data. While agents replicate patterns, such as modal split by socioeconomic status, they show systematic biases in trip length and mode preference. GTA offers new opportunities for modeling how future innovations, from bike lanes to transit apps, shape mobility decisions.",
     "tags": [],
-    "citations": 5,
+    "citations": 6,
     "has_analysis": false
   },
   {
@@ -2243,7 +2243,7 @@
     "note": "Accepted at CHI 2026",
     "abstract": "Artificial intelligence (AI)-based decision support systems can be highly accurate yet still fail to support users or improve decisions. Existing theories of AI-assisted decision-making focus on calibrating reliance on AI advice, leaving it unclear how different system designs might influence the reasoning processes underneath. We address this gap by reconsidering AI interfaces as collections of intelligent reasoning cues: discrete pieces of AI information that can individually influence decision-making. We then explore the roles of eight types of reasoning cues in a high-stakes clinical decision (treating patients with sepsis in intensive care). Through contextual inquiries with six teams and a think-aloud study with 25 physicians, we find that reasoning cues have distinct patterns of influence that can directly inform design. Our results also suggest that reasoning cues should prioritize tasks with high variability and discretion, adapt to ensure compatibility with evolving decision needs, and provide complementary, rigorous insights on complex cases.",
     "tags": [],
-    "citations": 5,
+    "citations": 6,
     "has_analysis": false
   },
   {
@@ -2859,7 +2859,7 @@
     "note": "Accepted at the Proceedings of the CHI 2026 Workshop: Ethics at the Front-End",
     "abstract": "AI chatbots have quietly become the world's most popular therapists, coaches, and confidants. Users of cloud-based LLM services are increasingly shifting from simple queries like idea generation and poem writing, to deeply personal interactions. As Large Language Models increasingly assume the role of our confessors, we are witnessing a massive, unregulated transfer of sensitive personal identifiable information (PII) to powerful tech companies with opaque privacy practices. While the enterprise sector has made great strides in addressing data leakage concerns through sophisticated guardrails and PII redaction pipelines, these powerful tools have functionally remained inaccessible for the average user due to their technical complexity. This results in a dangerous trade off for individual users. In order to receive the therapeutic or productivity benefits of AI, users need to abandon any agency they might otherwise have over their data, often without a clear mental model of what is being shared, and how it might be used for advertising later on. This work addresses this interaction gap, applying the redaction pipelines of enterprise-grade redaction into an intuitive, first-of-its-kind, consumer-facing, and free experience. Specifically, this work introduces a scalable, browser-based intervention designed to help align user behavior with their privacy preferences during web-based AI interactions. Our system introduces two key mechanisms: local entity anonymization to prevent data leakage, and 'smokescreens': autonomous agent activity to disrupt third-party profiling. An open-source implementation is accessible at the following GitHub Repository: https://github.com/SBleeyouk/PII_Shield.git",
     "tags": [],
-    "citations": 0,
+    "citations": 1,
     "has_analysis": false
   },
   {
@@ -4513,7 +4513,7 @@
     "note": "Accepted to CHI 2025, project page is https://appagent-official.github.io/",
     "abstract": "Recent advancements in large language models (LLMs) have led to the creation of intelligent agents capable of performing complex tasks. This paper introduces a novel LLM-based multimodal agent framework designed to operate smartphone applications. Our framework enables the agent to operate smartphone applications through a simplified action space, mimicking human-like interactions such as tapping and swiping. This novel approach bypasses the need for system back-end access, thereby broadening its applicability across diverse apps. Central to our agent's functionality is its innovative learning method. The agent learns to navigate and use new apps either through autonomous exploration or by observing human demonstrations. This process generates a knowledge base that the agent refers to for executing complex tasks across different applications. To demonstrate the practicality of our agent, we conducted extensive testing over 50 tasks in 10 different applications, including social media, email, maps, shopping, and sophisticated image editing tools. The results affirm our agent's proficiency in handling a diverse array of high-level tasks.",
     "tags": [],
-    "citations": 562,
+    "citations": 561,
     "has_analysis": false
   },
   {
@@ -5003,7 +5003,7 @@
         "why": "Step-by-step guided interaction beat full automation on control and learnability across data-analysis and visual-design tasks."
       }
     ],
-    "citations": 20,
+    "citations": 21,
     "has_analysis": true
   },
   {
@@ -5179,7 +5179,7 @@
     "note": "14 pages excluding reference and appendix. Accepted at ACM CHI 2025. https://dl.acm.org/doi/10.1145/3706598.3713109",
     "abstract": "Multi-role pedagogical agents can create engaging and immersive learning experiences, helping learners better understand knowledge in history learning. However, existing pedagogical agents often struggle with multi-role interactions due to complex controls, limited feedback forms, and difficulty dynamically adapting to user inputs. In this study, we developed a VR prototype with LLM-powered adaptive role-switching and action-switching pedagogical agents to help users learn about the history of the Pavilion of Prince Teng. A 2 x 2 between-subjects study was conducted with 84 participants to assess how adaptive role-switching and action-switching affect participants' learning outcomes and experiences. The results suggest that adaptive role-switching enhances participants' perception of the pedagogical agent's trustworthiness and expertise but may lead to inconsistent learning experiences. Adaptive action-switching increases participants' perceived social presence, expertise, and humanness. The study did not uncover any effects of role-switching and action-switching on usability, learning motivation, and cognitive load. Based on the findings, we proposed five design implications for incorporating adaptive role-switching and action-switching into future VR history education tools.",
     "tags": [],
-    "citations": 20,
+    "citations": 22,
     "has_analysis": false
   },
   {
@@ -5924,7 +5924,7 @@
     "note": "7 pages, 1 figure, accepted to the HEAL@CHI 2025 Workshop",
     "abstract": "The last couple of years have witnessed emerging research that appropriates Theory-of-Mind (ToM) tasks designed for humans to benchmark LLM's ToM capabilities as an indication of LLM's social intelligence. However, this approach has a number of limitations. Drawing on existing psychology and AI literature, we summarize the theoretical, methodological, and evaluation limitations by pointing out that certain issues are inherently present in the original ToM tasks used to evaluate human's ToM, which continues to persist and exacerbated when appropriated to benchmark LLM's ToM. Taking a human-computer interaction (HCI) perspective, these limitations prompt us to rethink the definition and criteria of ToM in ToM benchmarks in a more dynamic, interactional approach that accounts for user preferences, needs, and experiences with LLMs in such evaluations. We conclude by outlining potential opportunities and challenges towards this direction.",
     "tags": [],
-    "citations": 21,
+    "citations": 22,
     "has_analysis": false
   },
   {
@@ -6645,7 +6645,7 @@
     "note": "CHI 2024 Paper - The paper includes 17 pages, 8 figures, 2 tables, along with a 2-page appendix",
     "abstract": "Timely, personalized feedback is essential for students learning programming. LLM-powered tools like ChatGPT offer instant support, but reveal direct answers with code, which may hinder deep conceptual engagement. We developed CodeAid, an LLM-powered programming assistant delivering helpful, technically correct responses, without revealing code solutions. CodeAid answers conceptual questions, generates pseudo-code with line-by-line explanations, and annotates student's incorrect code with fix suggestions. We deployed CodeAid in a programming class of 700 students for a 12-week semester. A thematic analysis of 8,000 usages of CodeAid was performed, further enriched by weekly surveys, and 22 student interviews. We then interviewed eight programming educators to gain further insights. Our findings reveal four design considerations for future educational AI assistants: D1) exploiting AI's unique benefits; D2) simplifying query formulation while promoting cognitive engagement; D3) avoiding direct responses while encouraging motivated learning; and D4) maintaining transparency and control for students to asses and steer AI responses.",
     "tags": [],
-    "citations": 381,
+    "citations": 383,
     "has_analysis": false
   },
   {
@@ -6668,7 +6668,7 @@
         "why": "LLM proposes high-level, human-checkable concepts from unstructured data, a way of surfacing patterns to investigate."
       }
     ],
-    "citations": 158,
+    "citations": 159,
     "has_analysis": false
   },
   {
@@ -6909,7 +6909,7 @@
     "note": "Accepted to CHI 2024",
     "abstract": "By simply composing prompts, developers can prototype novel generative applications with Large Language Models (LLMs). To refine prototypes into products, however, developers must iteratively revise prompts by evaluating outputs to diagnose weaknesses. Formative interviews (N=8) revealed that developers invest significant effort in manually evaluating outputs as they assess context-specific and subjective criteria. We present EvalLM, an interactive system for iteratively refining prompts by evaluating multiple outputs on user-defined criteria. By describing criteria in natural language, users can employ the system's LLM-based evaluator to get an overview of where prompts excel or fail, and improve these based on the evaluator's feedback. A comparative study (N=12) showed that EvalLM, when compared to manual evaluation, helped participants compose more diverse criteria, examine twice as many outputs, and reach satisfactory prompts with 59% fewer revisions. Beyond prompts, our work can be extended to augment model evaluation and alignment in specific application contexts.",
     "tags": [],
-    "citations": 173,
+    "citations": 174,
     "has_analysis": false
   },
   {
@@ -7170,7 +7170,7 @@
         "why": "An in-situ pre-mortem while prototyping, with LLM-generated, editable harms. A direct precedent for your risk cards."
       }
     ],
-    "citations": 101,
+    "citations": 102,
     "has_analysis": true
   },
   {
@@ -7834,7 +7834,7 @@
     "note": "Paper accepted to the 2024 CHI Conference on Human Factors in Computing Systems (CHI 2024)",
     "abstract": "The progression to \"Pervasive Augmented Reality\" envisions easy access to multimodal information continuously. However, in many everyday scenarios, users are occupied physically, cognitively or socially. This may increase the friction to act upon the multimodal information that users encounter in the world. To reduce such friction, future interactive interfaces should intelligently provide quick access to digital actions based on users' context. To explore the range of possible digital actions, we conducted a diary study that required participants to capture and share the media that they intended to perform actions on (e.g., images or audio), along with their desired actions and other contextual information. Using this data, we generated a holistic design space of digital follow-up actions that could be performed in response to different types of multimodal sensory inputs. We then designed OmniActions, a pipeline powered by large language models (LLMs) that processes multimodal sensory inputs and predicts follow-up actions on the target information grounded in the derived design space. Using the empirical data collected in the diary study, we performed quantitative evaluations on three variations of LLM techniques (intent classification, in-context learning and finetuning) and identified the most effective technique for our task. Additionally, as an instantiation of the pipeline, we developed an interactive prototype and reported preliminary user feedback about how people perceive and react to the action predictions and its errors.",
     "tags": [],
-    "citations": 37,
+    "citations": 38,
     "has_analysis": false
   },
   {
@@ -8038,7 +8038,7 @@
         "why": "Models programmers' behaviour from Copilot telemetry and shows why a single event metric (acceptance rate) misleads."
       }
     ],
-    "citations": 247,
+    "citations": 248,
     "has_analysis": false
   },
   {
