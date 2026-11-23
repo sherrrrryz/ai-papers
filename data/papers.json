@@ -195,7 +195,7 @@
     "note": "Accepted for presentation at CHI 2026 in Barcelona (ACM CHI Conference on Human Factors in Computing Systems)",
     "abstract": "Large Language Models (LLMs) are increasingly used for mental health support, yet little is known about how people with mental health challenges engage with them, how they evaluate their usefulness, and what design opportunities they envision. We conducted 20 semi-structured interviews with people in the UK who live with mental health conditions and have used LLMs for mental health support. Through reflexive thematic analysis, we found that participants engaged with LLMs in conditional and situational ways: for immediacy, the desire for non-judgement, self-paced disclosure, cognitive reframing, and relational engagement. Simultaneously, participants articulated clear boundaries informed by prior therapeutic experience: LLMs were effective for mild-to-moderate distress but inadequate for crises, trauma, and complex social-emotional situations. We contribute empirical insights into the lived use of LLMs for mental health, highlight boundary-setting as central to their safe role, and propose design and governance directions for embedding them responsibly within care ecosystem.",
     "tags": [],
-    "citations": 9,
+    "citations": 10,
     "has_analysis": false
   },
   {
@@ -320,7 +320,7 @@
     "note": "This paper has been accepted for publication at ACM CHI 2026",
     "abstract": "AI-assisted writing raises concerns about autonomy and ownership when benefiting writers. Personalization has been proposed as an effective solution while also risking writers' reliance on AI and behavior shifting. For better personalization design, existing studies rely on interaction and information solely within the writing phase; however, few studies have examined how reading behaviors can inform personalized writing. This study investigates the effects of integrating reading highlights for personalization on AI-assisted writing. A between-subjects study with 46 participants revealed that the personalization condition encouraged participants to produce more highlights. However, highlighting unexpectedly shifted from a sense-making strategy to an instrumental act of \"feeding the AI,\" leading to significant reliance on AI and declines in writers' sense of autonomy, ownership, and self-credit. These findings indicate personalization risks in AI-assisted writing, emphasize the importance of personalization strategies, and provide design implications.",
     "tags": [],
-    "citations": 3,
+    "citations": 4,
     "has_analysis": false
   },
   {
@@ -368,7 +368,7 @@
     "note": "ACM CHI 2026",
     "abstract": "Recent Large Language Model (LLM) based AI can exhibit recognizable and measurable personality traits during conversations to improve user experience. However, as human understandings of their personality traits can be affected by their interaction partners' traits, a potential risk is that AI traits may shape and bias users' self-concept of their own traits. To explore the possibility, we conducted a randomized behavioral experiment. Our results indicate that after conversations about personal topics with an LLM-based AI chatbot using GPT-4o default personality traits, users' self-concepts aligned with the AI's measured personality traits. The longer the conversation, the greater the alignment. This alignment led to increased homogeneity in self-concepts among users. We also observed that the degree of self-concept alignment was positively associated with users' conversation enjoyment. Our findings uncover how AI personality traits can shape users' self-concepts through human-AI conversation, highlighting both risks and opportunities. We provide important design implications for developing more responsible and ethical AI systems.",
     "tags": [],
-    "citations": 12,
+    "citations": 13,
     "has_analysis": false
   },
   {
@@ -525,7 +525,7 @@
     "note": "26 pages, 6 figures, CHI 2026",
     "abstract": "The popularization of social media has led to increasing consumption of narrative content in byte-sized formats. Such micro-dramas contain fast-pace action and emotional cliffs, particularly attractive to emerging Chinese markets in platforms like Douyin and Kuaishou. Content writers for micro-dramas must adapt to fast-pace, audience-directed workflows, but previous research has focused instead on examining writers'experiences of platform affordances or their perceptions of platform bias, rather than the step-by-step processes through which they actually write and iterative content. In 28 semi-structured interviews with scriptwriters and writers specialized in micro-dramas, we found that the short-turn-around workflow leads to writers taking on multiple roles simultaneously, iteratively adapting to storylines in response to real-time audience feedback in the form of comments, reposts, and memes. We identified unique narrative styles such as AI-generated micro-dramas and audience-responsive micro-dramas. This work reveals audience interaction as a new paradigm for collaborative creative processes on social media.",
     "tags": [],
-    "citations": 8,
+    "citations": 9,
     "has_analysis": false
   },
   {
@@ -657,7 +657,7 @@
         "why": "Clusters interaction-log behaviour to find which user actions signal overreliance on an LLM."
       }
     ],
-    "citations": 17,
+    "citations": 18,
     "has_analysis": true
   },
   {
@@ -744,7 +744,7 @@
     "note": "Published at CHI 2026",
     "abstract": "Social media feeds use predictive models to maximize engagement, often misaligning how people consume content with how they wish to. We introduce Bonsai, a system that enables people to build personalized and intentional feeds. Bonsai implements a platform-agnostic framework comprising Planning, Sourcing, Curating, and Ranking modules. This framework allows users to express their intent in natural language and exert fine-grained control over a procedurally transparent feed creation process. We evaluated the system with 15 Bluesky users in a two-phase, multi-week study. We find that participants successfully used our system to discover new content, filter out irrelevant or toxic posts, and disentangle engagement from intent, but curating intentional feeds required more effort than they are used to. Simultaneously, users sought system transparency mechanisms to effectively use (and trust) intentional, personalized feeds. Overall, our work highlights intentional feedbuilding as a viable path beyond engagement-based optimization.",
     "tags": [],
-    "citations": 20,
+    "citations": 21,
     "has_analysis": false
   },
   {
@@ -936,7 +936,7 @@
     "note": "CHI 2026",
     "abstract": "This paper introduces CoBRA, a novel toolkit for systematically specifying agent behavior in LLM-based social simulation. We found that conventional approaches that specify agent behavior through implicit natural-language descriptions often do not yield consistent behavior across models, and the resulting behavior does not capture the nuances of the descriptions. In contrast, CoBRA introduces a model-agnostic way to control agent behavior that lets researchers explicitly specify desired nuances and obtain consistent behavior across models. At the heart of CoBRA is a novel closed-loop system primitive with two components: (1) Cognitive Bias Index that measures the demonstrated cognitive bias of a social agent, by quantifying the agent's reactions in a set of validated classic social science experiments; (2) Behavioral Regulation Engine that aligns the agent's behavior to exhibit controlled cognitive bias. Through CoBRA, we show how to operationalize validated social science knowledge (i.e., classical experiments) as reusable \"gym\" environments for AI -- an approach that may generalize to richer social and affective simulations beyond bias alone.",
     "tags": [],
-    "citations": 19,
+    "citations": 20,
     "has_analysis": false
   },
   {
@@ -1704,7 +1704,7 @@
         "why": "AI proactively proposes analysis steps while the user explores data."
       }
     ],
-    "citations": 5,
+    "citations": 6,
     "has_analysis": false
   },
   {
@@ -1807,7 +1807,7 @@
         "why": "A metric taxonomy (reliance, safety signals) you could borrow for the evaluation."
       }
     ],
-    "citations": 2,
+    "citations": 3,
     "has_analysis": true
   },
   {
@@ -2227,7 +2227,7 @@
     "note": "21 pages, 15 figures, CHI 2026",
     "abstract": "Visual designers often seek inspiration from Chinese paintings when tasked with creating Chinese-style illustrations, posters, etc. Our formative study (N=10) reveals that during ideation, designers learn the cultural symbols, emotions, compositions, and styles in Chinese paintings but face challenges in searching, analyzing, and integrating these dimensions. This paper leverages multi-modal large models to annotate the value of each dimension in 16,315 Chinese paintings, built on which we propose InkIdeator, an ideation support system for Chinese-style visual designs. InkIdeator suggests cultural symbols associated with the task theme, provides dimensional keywords to help analyze Chinese paintings, and generates visual examples integrating user-selected keywords. Our within-subjects study (N=12) using a baseline system without extracted dimensional keywords, along with two extended use cases by Chinese painters, indicates InkIdeator's effectiveness in creative ideation support, helping users efficiently explore cultural dimensions in Chinese paintings and visualize their ideas. We discuss implications for supporting culture-related visual design ideation with generative AI.",
     "tags": [],
-    "citations": 3,
+    "citations": 4,
     "has_analysis": false
   },
   {
@@ -2259,7 +2259,7 @@
     "note": "To appear in the proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "We investigate how the presence and type of interaction context shapes sycophancy in LLMs. While real-world interactions allow models to mirror a user's values, preferences, and self-image, prior work often studies sycophancy in zero-shot settings devoid of context. Using two weeks of interaction context from 38 users, we evaluate two forms of sycophancy: (1) agreement sycophancy -- the tendency of models to produce overly affirmative responses, and (2) perspective sycophancy -- the extent to which models reflect a user's viewpoint. Agreement sycophancy tends to increase with the presence of user context, though model behavior varies based on the context type. User memory profiles are associated with the largest increases in agreement sycophancy (e.g. $+$45\\% for Gemini 2.5 Pro), and some models become more sycophantic even with non-user synthetic contexts (e.g. $+$15\\% for Llama 4 Scout). Perspective sycophancy increases only when models can accurately infer user viewpoints from interaction context. Overall, context shapes sycophancy in heterogeneous ways, underscoring the need for evaluations grounded in real-world interactions and raising questions for system design around alignment, memory, and personalization.",
     "tags": [],
-    "citations": 57,
+    "citations": 60,
     "has_analysis": false
   },
   {
@@ -2420,7 +2420,7 @@
         "why": "Infers a user's goal by passively observing their behaviour, then steers the AI with it."
       }
     ],
-    "citations": 32,
+    "citations": 33,
     "has_analysis": true
   },
   {
@@ -2651,7 +2651,7 @@
     "note": "21 pages, 12 figures, accepted to CHI 2026",
     "abstract": "Just as people improve decision-making by consulting diverse human advisors, they can now also consult with multiple AI systems. Prior work on group decision-making shows that advice aggregation creates pressure to conform, leading to overreliance. However, the conditions under which multi-AI consultation improves or undermines human decision-making remain unclear. We conducted experiments with three tasks in which participants received advice from panels of AIs. We varied panel size, within-panel consensus, and the human-likeness of presentation. Accuracy improved for small panels relative to a single AI; larger panels yielded no gains. The level of within-panel consensus affected participants' reliance on AI advice: High consensus fostered overreliance; a single dissent reduced pressure to conform; wide disagreement created confusion and undermined appropriate reliance. Human-like presentations increased perceived usefulness and agency in certain tasks, without raising conformity pressure. These findings yield design implications for presenting multi-AI advice that preserve accuracy while mitigating conformity.",
     "tags": [],
-    "citations": 4,
+    "citations": 5,
     "has_analysis": false
   },
   {
@@ -2731,7 +2731,7 @@
     "note": "Accepted by ACM CHI '2026",
     "abstract": "AI companions enable deep emotional relationships by engaging a user's sense of identity, but they also pose risks like unhealthy emotional dependence. Mitigating these risks requires first understanding the underlying process of identity construction and negotiation with AI companions. Focusing on Character.AI (C.AI), a popular AI companion, we conducted an LLM-assisted thematic analysis of 22,374 online discussions on its subreddit. Using Identity Negotiation Theory as an analytical lens, we identified a three-stage process: 1) five user motivations; 2) an identity negotiation process involving three communication expectations and four identity co-construction strategies; and 3) three emotional outcomes. Our findings surface the identity work users perform as both performers and directors to co-construct identities in negotiation with C.AI. This process takes place within a socio-emotional sandbox where users can experiment with social roles and express emotions without non-human partners. Finally, we offer design implications for emotionally supporting users while mitigating the risks.",
     "tags": [],
-    "citations": 11,
+    "citations": 12,
     "has_analysis": false
   },
   {
@@ -2779,7 +2779,7 @@
     "note": "20 pages, 4 figures, to be presented at CHI 2026",
     "abstract": "Existing assistive technologies (AT) often adopt a one-size-fits-all approach, overlooking the diverse needs of people with visual impairments (PVI). Do-it-yourself AT (DIY-AT) toolkits offer one path toward customization, but most remain limited--targeting co-design with engineers or requiring programming expertise. Non-professionals with disabilities, including PVI, also face barriers such as inaccessible tools, lack of confidence, and insufficient technical knowledge. These gaps highlight the need for prototyping technologies that enable PVI to directly make their own AT. Building on emerging evidence that large language models (LLMs) can serve not only as visual aids but also as co-design partners, we present an exploratory study of how LLM-based AI can support PVI in the tangible DIY-AT co-making process. Our findings surface key challenges and design opportunities: the need for greater spatial and visual support, strategies for mitigating novel AI errors, and implications for designing more accessible AI-assisted prototypes.",
     "tags": [],
-    "citations": 3,
+    "citations": 5,
     "has_analysis": false
   },
   {
@@ -2795,7 +2795,7 @@
     "note": "CHI 2026",
     "abstract": "We introduce the concept of notational animating, an interaction paradigm for animation authoring where users sketch high-level notations over static drawings to indicate intended motions, which are then interpreted by automatic methods (e.g., GenAI models) to generate animation keyframes. Sketched notations have long served as cognitive instruments for animators, capturing forces, poses, dynamics, paths, and other animation features. However, such notations are often context-dependent, non-categorical, ambiguous, and composable based on our analysis of real-world animator-produced sketches. To facilitate interpretation, we first formalize these notations into a structured animation representation (i.e., source, path, and target). We then built an animation authoring system that translates high-level notations into the formalized intended animation, provides dynamic UI widgets for fine-grained parameter control, and establishes a closed feedback loop to resolve ambiguity. Finally, through a preliminary study with animators, we assess the usability of notational animating, reflect its affordance, and identify its contexts of use.",
     "tags": [],
-    "citations": 7,
+    "citations": 9,
     "has_analysis": false
   },
   {
@@ -2923,7 +2923,7 @@
     "note": "CHI 2026 paper. Supplementary materials: https://docs.google.com/document/d/1jBmKXusoWmCHfwpmNhSTJtbwZ5fwVWLNppKeqqd_-pY/edit?usp=sharing",
     "abstract": "As LLMs gain adoption in high-stakes domains like mental health, domain experts are increasingly consulted to provide input into policies governing their behavior. From an observation of 19 policymaking workshops with 9 experts over 15 weeks, we identified opportunities to better support rapid experimentation, feedback, and iteration for collaborative policy design processes. We present PolicyPad, an interactive system that facilitates the emerging practice of LLM policy prototyping by drawing from established UX prototyping practices, including heuristic evaluation and storyboarding. Using PolicyPad, policy designers can collaborate on drafting a policy in real time while independently testing policy-informed model behavior with usage scenarios. We evaluate PolicyPad through workshops with 8 groups of 22 domain experts in mental health and law, finding that PolicyPad enhanced collaborative dynamics during policy design, enabled tight feedback loops, and led to novel policy contributions. Overall, our work paves expert-informed paths for advancing AI alignment and safety.",
     "tags": [],
-    "citations": 6,
+    "citations": 7,
     "has_analysis": false
   },
   {
@@ -3000,7 +3000,7 @@
     "note": "21 pages, 13 figures; accepted and to appear at CHI 2026",
     "abstract": "In pre-production, filmmakers and 3D animation experts must rapidly prototype ideas to explore a film's possibilities before fullscale production, yet conventional approaches involve trade-offs in efficiency and expressiveness. Hand-drawn storyboards often lack spatial precision needed for complex cinematography, while 3D previsualization demands expertise and high-quality rigged assets. To address this gap, we present PrevizWhiz, a system that leverages rough 3D scenes in combination with generative image and video models to create stylized video previews. The workflow integrates frame-level image restyling with adjustable resemblance, time-based editing through motion paths or external video inputs, and refinement into high-fidelity video clips. A study with filmmakers demonstrates that our system lowers technical barriers for film-makers, accelerates creative iteration, and effectively bridges the communication gap, while also surfacing challenges of continuity, authorship, and ethical consideration in AI-assisted filmmaking.",
     "tags": [],
-    "citations": 10,
+    "citations": 11,
     "has_analysis": false
   },
   {
@@ -3016,7 +3016,7 @@
     "note": "Accepted at CHI 2026",
     "abstract": "An increasing number of LLM-based applications are being developed to facilitate romantic relationships with AI partners, yet the safety and privacy risks in these partnerships remain largely underexplored. In this work, we investigate privacy in human-AI romantic relationships through an interview study (N=17), examining participants' experiences and privacy perceptions across the three stages of exploration, intimacy, and dissolution, alongside an analysis of the platforms they used. We found that these relationships took varied forms, from one-to-one to one-to-many, and were shaped by multiple actors, including creators, platforms, and moderators. AI partners were perceived as having agency, actively negotiating privacy boundaries with participants and sometimes encouraging disclosure of personal details. As intimacy deepened, these boundaries became more permeable, though some participants expressed concerns such as conversation exposure and sought to preserve anonymity. Overall, AI platform affordances and diverse relational dynamics expand the privacy landscape, underscoring the need to rethink how privacy is constructed in human-AI romantic relationships.",
     "tags": [],
-    "citations": 17,
+    "citations": 18,
     "has_analysis": false
   },
   {
@@ -3240,7 +3240,7 @@
     "note": "Conditionally accepted to ACM CHI 2026, Barcelona, Spain",
     "abstract": "Credit scoring is an increasingly central and contested domain of data and AI governance, frequently framed as a neutral and objective method of assessing risk across diverse economic and political contexts. Based on a nine-month ethnography of credit scoring practices in Nairobi, Kenya, we examined the sociotechnical and institutional work of data science in digital lending. While established regional telcos and banks are leveraging proprietary data to develop digital loan products, algorithmic credit scoring is being transformed by new actors, techniques, and shifting regulations. Our findings show how practitioners construct alternative data using technical and legal workarounds, formulate risk through multiple interpretations, and negotiate model performance via technical and political means. We argue that algorithmic credit scoring is accomplished through the ongoing work of alignment that stabilizes risk under conditions of persistent uncertainty, taking epistemic, modeling, and contextual forms. Extending work on alignment in HCI, we show how it operates as a two-way translation, where models are made \"safe for worlds\" while those worlds are reshaped to be \"safe for models.\"",
     "tags": [],
-    "citations": 6,
+    "citations": 7,
     "has_analysis": false
   },
   {
@@ -3256,7 +3256,7 @@
     "note": "Accepted at CHI 2026 (ACM Conference on Human Factors in Computing Systems). 24 pages, 10 figures. Author's version",
     "abstract": "We present Roomify, a spatially-grounded transformation system that generates themed virtual environments anchored to users' physical rooms while maintaining spatial structure and functional semantics. Current VR approaches face a fundamental trade-off: full immersion sacrifices spatial awareness, while passthrough solutions break presence. Roomify addresses this through spatially-grounded transformation - treating physical spaces as \"spatial containers\" that preserve key functional and geometric properties of furniture while enabling radical stylistic changes. Our pipeline combines in-situ 3D scene understanding, AI-driven spatial reasoning, and style-aware generation to create personalized virtual environments grounded in physical reality. We introduce a cross-reality authoring tool enabling fine-grained user control through MR editing and VR preview workflows. Two user studies validate our approach: one with 18 VR users demonstrates a 63% improvement in presence over passthrough and 26% over fully virtual baselines while maintaining spatial awareness; another with 8 design professionals confirms the system's creative expressiveness (scene quality: 5.95/7; creativity support: 6.08/7) and professional workflow value across diverse environments.",
     "tags": [],
-    "citations": 5,
+    "citations": 6,
     "has_analysis": false
   },
   {
@@ -3317,7 +3317,7 @@
     "note": "19 pages, 11 figures. Accepted at ACM CHI 2026, Barcelona",
     "abstract": "Despite advances in multimodal AI, current vision-based assistants often remain inefficient in collaborative tasks. We identify two key gulfs: a communication gulf, where users must translate rich parallel intentions into verbal commands due to the channel mismatch , and an understanding gulf, where AI struggles to interpret subtle embodied cues. To address these, we propose Eye2Eye, a framework that leverages first-person perspective as a channel for human-AI cognitive alignment. It integrates three components: (1) joint attention coordination for fluid focus alignment, (2) revisable memory to maintain evolving common ground, and (3) reflective feedback allowing users to clarify and refine AI's understanding. We implement this framework in an AR prototype and evaluate it through a user study and a post-hoc pipeline evaluation. Results show that Eye2Eye significantly reduces task completion time and interaction load while increasing trust, demonstrating its components work in concert to improve collaboration.",
     "tags": [],
-    "citations": 5,
+    "citations": 6,
     "has_analysis": false
   },
   {
@@ -3333,7 +3333,7 @@
     "note": "This manuscript has been accepted to CHI 2026",
     "abstract": "Difficulty spillover and suboptimal help-seeking challenge the sequential, knowledge-intensive nature of digital tasks. In online surveys, tough questions can drain mental energy and hurt performance on later questions, while users often fail to recognize when they need assistance or may satisfy, lacking motivation to seek help. We developed a proactive, adaptive system using electrodermal activity and mouse movement to predict when respondents need support. Personalized classifiers with a rule-based threshold adaptation trigger timely LLM-based clarifications and explanations. In a within-subjects study (N=32), aligned-adaptive timing was compared to misaligned-adaptive and random-adaptive controls. Aligned-adaptive assistance improved response accuracy by 21%, reduced false negative rates from 50.9% to 22.9%, and improved perceived efficiency, dependability, and benevolence. Properly timed interventions prevent cascades of degraded responses, showing that aligning support with cognitive states improves both the outcomes and the user experience. This enables more effective, personalized LLM-assisted support in survey-based research.",
     "tags": [],
-    "citations": 8,
+    "citations": 9,
     "has_analysis": false
   },
   {
@@ -3580,7 +3580,7 @@
     "note": "19 pages, 9 figures, CHI 2026",
     "abstract": "LLM-assisted technologies are increasingly used to support cognitive processing and information interpretation, yet their role in aiding memory recall, and how people choose to engage with them, remains underexplored. We studied participants who watched a short robbery video (approximating a one-time eyewitness scenario) and composed recall statements using either a default GPT or a guided GPT prompted with a standardized eyewitness protocol. Results show that, in the default condition, participants who believed they had a clearer understanding of the event were more likely to trust GPT's output, whereas in the guided condition, participants showed stronger alignment between subjective clarity and actual recall. Additionally, participants evaluated the legitimacy of the individuals in the incident differently across conditions. Interaction analysis further revealed that default-GPT users spontaneously developed diverse strategies, including building on existing recollections, requesting potentially missing details, and treating GPT as a recall coach. This work shows how GPT-user interplay can subconsciously shape beliefs and perceptions of remembered events.",
     "tags": [],
-    "citations": 6,
+    "citations": 7,
     "has_analysis": false
   },
   {
@@ -3628,7 +3628,7 @@
     "note": "To appear in CHI 2026",
     "abstract": "Recent reports on generative AI chatbot use raise concerns about its addictive potential. An in-depth understanding is imperative to minimize risks, yet AI chatbot addiction remains poorly understood. This study examines how to characterize AI chatbot addiction--why users become addicted, the symptoms commonly reported, and the distinct types it comprises. We conducted a thematic analysis of Reddit entries (n=334) across 14 subreddits where users narrated their experiences with addictive AI chatbot use, followed by an exploratory data analysis. We found: (1) users' dependence tied to the \"AI Genie\" phenomenon--users can get exactly anything they want with minimal effort--and marked by symptoms that align with addiction literature, (2) three distinct addiction types: Escapist Roleplay, Pseudosocial Companion, and Epistemic Rabbit Hole, (3) sexual content involved in multiple cases, and (4) recovery strategies' perceived helpfulness differ between addiction types. Our work lays empirical groundwork to inform future strategies for prevention, diagnosis, and intervention.",
     "tags": [],
-    "citations": 14,
+    "citations": 16,
     "has_analysis": false
   },
   {
@@ -3676,7 +3676,7 @@
     "note": "To be published in ACM CHI 2026",
     "abstract": "Responsiveness in large language model (LLM) applications is widely assumed to be critical, yet the impact of latency on user behavior and perception of output quality has not been systematically explored. We report a controlled experiment varying time-to-first-token latency (2, 9, 20 seconds) across two taxonomy-driven knowledge task types (Creation and Advice). Log analyses reveal that user interaction behaviors were robust to latency, yet varied by task type: Creation tasks elicited more frequent prompting than Advice tasks. In contrast, participants who experienced 2-second latencies rated the LLM's outputs less thoughtful and useful than those who experienced 9- or 20-second latencies. Participants attributed delays to AI deliberation, though long waits occasionally shifted this interpretation toward frustration or concerns about reliability. Overall, this work demonstrates that latency is not simply a cost to reduce but a tunable design variable with ethical implications. We offer design strategies for enhancing human-LLM interaction.",
     "tags": [],
-    "citations": 8,
+    "citations": 11,
     "has_analysis": false
   },
   {
@@ -3914,7 +3914,7 @@
     "note": "30 pages, CHI 2026 conference paper (article no. 371)",
     "abstract": "Large language models (LLMs) enable conversational agents (CAs) to express distinctive personalities, raising new questions about how such designs shape user perceptions. This study investigates how personality expression levels and user-agent personality alignment influence perceptions in goal-oriented tasks. In a between-subjects experiment (N=150), participants completed travel planning with CAs exhibiting low, medium, or high expression across the Big Five traits, controlled via our novel Trait Modulation Keys framework. Results revealed an inverted-U relationship: medium expression produced the most positive evaluations across Intelligence, Enjoyment, Anthropomorphism, Intention to Adopt, Trust, and Likeability, significantly outperforming both extremes. Personality alignment further enhanced outcomes, with Extraversion and Emotional Stability emerging as the most influential traits. Cluster analysis identified three distinct compatibility profiles, with \"Well-Aligned\" users reporting substantially positive perceptions. These findings demonstrate that personality expression and strategic trait alignment constitute optimal design targets for CA personality, offering design implications as LLM-based CAs become increasingly prevalent.",
     "tags": [],
-    "citations": 17,
+    "citations": 19,
     "has_analysis": false
   },
   {
@@ -3930,7 +3930,7 @@
     "note": "Accepted to CHI 2026 (25 pages, 18 figures)",
     "abstract": "Video storytelling is often constrained by available material, limiting creative expression and leaving undesired narrative gaps. Generative video offers a new way to address these limitations by augmenting captured media with tailored visuals. To explore this potential, we interviewed eight video creators to identify opportunities and challenges in integrating generative video into their workflows. Building on these insights and established filmmaking principles, we developed Vidmento, a tool for authoring hybrid video stories that combine captured and generated media through context-aware expansion. Vidmento surfaces opportunities for story development, generates clips that blend stylistically and narratively with surrounding media, and provides controls for refinement. In a study with 12 creators, Vidmento supported narrative development and exploration by systematically expanding initial materials with generative media, enabling expressive video storytelling aligned with creative intent. We highlight how creators bridge story gaps with generative content and where they find this blending capability most valuable.",
     "tags": [],
-    "citations": 6,
+    "citations": 7,
     "has_analysis": false
   },
   {
@@ -3946,7 +3946,7 @@
     "note": "Accepted to CHI 2026",
     "abstract": "Music shapes the tone of videos, yet creators often struggle to find soundtracks that match their video's mood and narrative. Recent text-to-music models let creators generate music from text prompts, but our formative study (N=8) shows creators struggle to construct diverse prompts, quickly review and compare tracks, and understand their impact on the video. We present VidTune, a system that supports soundtrack creation by generating diverse music options from a creator's prompt and producing contextual thumbnails for rapid review. VidTune extracts representative video subjects to ground thumbnails in context, maps each track's valence and energy onto visual cues like color and brightness, and depicts prominent genres and instruments. Creators can refine tracks through natural language edits, which VidTune expands into new generations. In a controlled user study (N=12) and an exploratory case study (N=6), participants found VidTune helpful for efficiently reviewing and comparing music options and described the process as playful and enriching.",
     "tags": [],
-    "citations": 4,
+    "citations": 6,
     "has_analysis": false
   },
   {
@@ -4138,7 +4138,7 @@
     "note": "Accepted to CHI 2026 Paper Track",
     "abstract": "System prompts - instructions that shape the behaviour of generative AI systems - strongly influence system outputs and users' experiences. They define the model's guidelines, `personality', and guardrails, taking precedence over user inputs. Despite their influence, transparency is limited: system prompts are generally not made public and most platforms instruct models to conceal them, leaving users disconnected from and unaware of a key mechanism guiding and governing their AI interactions. This paper argues that system prompts warrant explicit, user-centred design attention and, focusing on large language models (LLMs), asks: what do system prompts contain, how do end-users perceive them, and what do these perceptions offer for design and governance practice? Our results reveal user perspectives on: the benefits and risks of system prompts; the values they prefer to be associated with prompt-design; their levels of comfort with different types of prompts; and degrees of transparency and user control regarding prompt content. From these findings emerge considerations for how designers can better align system prompt mechanisms with user expectations and preferences over these mechanisms that directly shape how generative AI systems behave.",
     "tags": [],
-    "citations": 12,
+    "citations": 13,
     "has_analysis": false
   },
   {
@@ -4346,7 +4346,7 @@
     "note": "21 pages excluding reference. Accepted at ACM CHI 2025. https://naver-ai.github.io/aacesstalk/",
     "abstract": "As minimally verbal autistic (MVA) children communicate with parents through few words and nonverbal cues, parents often struggle to encourage their children to express subtle emotions and needs and to grasp their nuanced signals. We present AACessTalk, a tablet-based, AI-mediated communication system that facilitates meaningful exchanges between an MVA child and a parent. AACessTalk provides real-time guides to the parent to engage the child in conversation and, in turn, recommends contextual vocabulary cards to the child. Through a two-week deployment study with 11 MVA child-parent dyads, we examine how AACessTalk fosters everyday conversation practice and mutual engagement. Our findings show high engagement from all dyads, leading to increased frequency of conversation and turn-taking. AACessTalk also encouraged parents to explore their own interaction strategies and empowered the children to have more agency in communication. We discuss the implications of designing technologies for balanced communication dynamics in parent-MVA child interaction.",
     "tags": [],
-    "citations": 40,
+    "citations": 41,
     "has_analysis": false
   },
   {
@@ -4362,7 +4362,7 @@
     "note": "20 pages, 7 figures, published in CHI 2025",
     "abstract": "While interpretability methods identify a model's learned concepts, they overlook the relationships between concepts that make up its abstractions and inform its ability to generalize to new data. To assess whether models' have learned human-aligned abstractions, we introduce abstraction alignment, a methodology to compare model behavior against formal human knowledge. Abstraction alignment externalizes domain-specific human knowledge as an abstraction graph, a set of pertinent concepts spanning levels of abstraction. Using the abstraction graph as a ground truth, abstraction alignment measures the alignment of a model's behavior by determining how much of its uncertainty is accounted for by the human abstractions. By aggregating abstraction alignment across entire datasets, users can test alignment hypotheses, such as which human concepts the model has learned and where misalignments recur. In evaluations with experts, abstraction alignment differentiates seemingly similar errors, improves the verbosity of existing model-quality metrics, and uncovers improvements to current human abstractions.",
     "tags": [],
-    "citations": 12,
+    "citations": 13,
     "has_analysis": false
   },
   {
@@ -4394,7 +4394,7 @@
     "note": "4 pages, CHI 2025 Workshop on Augmented Educators and AI: Shaping the Future of Human and AI Cooperation in Learning",
     "abstract": "Blind and visually impaired (BVI) students face significant challenges in traditional educational settings. While screen readers and braille materials offer some accessibility, they often lack interactivity and real-time adaptability to individual learning needs. This paper presents Audemy, an AI-powered audio-based learning platform designed to provide personalized, accessible, and engaging educational experiences for BVI students. Audemy uses adaptive learning techniques to customize content based on student accuracy, pacing preferences, and engagement patterns. The platform has been iteratively developed with input from over 20 educators specializing in accessibility and currently serves over 2,000 BVI students. Educator insights show key considerations for accessible AI, including the importance of engagement, intuitive design, compatibility with existing assistive technologies, and the role of positive reinforcement in maintaining student motivation. Beyond accessibility, this paper explores the ethical implications of AI in education, emphasizing data privacy, security, and transparency. Audemy demonstrates how AI can empower BVI students with personalized and equitable learning opportunities, advancing the broader goal of inclusive education.",
     "tags": [],
-    "citations": 18,
+    "citations": 19,
     "has_analysis": false
   },
   {
@@ -4426,7 +4426,7 @@
     "note": "Accepted at CHI 2025",
     "abstract": "Large language models (LLMs) are being increasingly integrated into everyday products and services, such as coding tools and writing assistants. As these embedded AI applications are deployed globally, there is a growing concern that the AI models underlying these applications prioritize Western values. This paper investigates what happens when a Western-centric AI model provides writing suggestions to users from a different cultural background. We conducted a cross-cultural controlled experiment with 118 participants from India and the United States who completed culturally grounded writing tasks with and without AI suggestions. Our analysis reveals that AI provided greater efficiency gains for Americans compared to Indians. Moreover, AI suggestions led Indian participants to adopt Western writing styles, altering not just what is written but also how it is written. These findings show that Western-centric AI models homogenize writing toward Western norms, diminishing nuances that differentiate cultural expression.",
     "tags": [],
-    "citations": 194,
+    "citations": 196,
     "has_analysis": false
   },
   {
@@ -4481,7 +4481,7 @@
     "note": "Published as a conference paper at CHI 2025. Project page: https://yewon-kim.com/amuse",
     "abstract": "Songwriting is often driven by multimodal inspirations, such as imagery, narratives, or existing music, yet songwriters remain unsupported by current music AI systems in incorporating these multimodal inputs into their creative processes. We introduce Amuse, a songwriting assistant that transforms multimodal (image, text, or audio) inputs into chord progressions that can be seamlessly incorporated into songwriters' creative processes. A key feature of Amuse is its novel method for generating coherent chords that are relevant to music keywords in the absence of datasets with paired examples of multimodal inputs and chords. Specifically, we propose a method that leverages multimodal large language models (LLMs) to convert multimodal inputs into noisy chord suggestions and uses a unimodal chord model to filter the suggestions. A user study with songwriters shows that Amuse effectively supports transforming multimodal ideas into coherent musical suggestions, enhancing users' agency and creativity throughout the songwriting process.",
     "tags": [],
-    "citations": 35,
+    "citations": 36,
     "has_analysis": false
   },
   {
@@ -4513,7 +4513,7 @@
     "note": "Accepted to CHI 2025, project page is https://appagent-official.github.io/",
     "abstract": "Recent advancements in large language models (LLMs) have led to the creation of intelligent agents capable of performing complex tasks. This paper introduces a novel LLM-based multimodal agent framework designed to operate smartphone applications. Our framework enables the agent to operate smartphone applications through a simplified action space, mimicking human-like interactions such as tapping and swiping. This novel approach bypasses the need for system back-end access, thereby broadening its applicability across diverse apps. Central to our agent's functionality is its innovative learning method. The agent learns to navigate and use new apps either through autonomous exploration or by observing human demonstrations. This process generates a knowledge base that the agent refers to for executing complex tasks across different applications. To demonstrate the practicality of our agent, we conducted extensive testing over 50 tasks in 10 different applications, including social media, email, maps, shopping, and sophisticated image editing tools. The results affirm our agent's proficiency in handling a diverse array of high-level tasks.",
     "tags": [],
-    "citations": 605,
+    "citations": 610,
     "has_analysis": false
   },
   {
@@ -4577,7 +4577,7 @@
     "note": "Accepted at the 2025 Conference on Human Factors in Computing Systems (CHI 2025)",
     "abstract": "In recent years, large language models (LLMs) have demonstrated exponential improvements that promise transformative opportunities across various industries. Their ability to generate human-like text and ensure continuous availability facilitates the creation of interactive service chatbots aimed at enhancing customer experience and streamlining enterprise operations. Despite their potential, LLMs face critical challenges, such as a susceptibility to hallucinations and difficulties handling complex linguistic scenarios, notably code switching and dialectal variations. To address these challenges, this paper describes the design of a multilingual chatbot for Bengali-English customer service interactions utilizing retrieval-augmented generation (RAG) and targeted prompt engineering. This research provides valuable insights for the human-computer interaction (HCI) community, emphasizing the importance of designing systems that accommodate linguistic diversity to benefit both customers and businesses. By addressing the intersection of generative AI and cultural heterogeneity, this late-breaking work inspires future innovations in multilingual and multicultural HCI.",
     "tags": [],
-    "citations": 12,
+    "citations": 13,
     "has_analysis": false
   },
   {
@@ -4705,7 +4705,7 @@
     "note": "ACM CHI 2025",
     "abstract": "LLM-based applications are helping people write, and LLM-generated text is making its way into social media, journalism, and our classrooms. However, the differences between LLM-generated and human written text remain unclear. To explore this, we hired professional writers to edit paragraphs in several creative domains. We first found these writers agree on undesirable idiosyncrasies in LLM generated text, formalizing it into a seven-category taxonomy (e.g. clichés, unnecessary exposition). Second, we curated the LAMP corpus: 1,057 LLM-generated paragraphs edited by professional writers according to our taxonomy. Analysis of LAMP reveals that none of the LLMs used in our study (GPT4o, Claude-3.5-Sonnet, Llama-3.1-70b) outperform each other in terms of writing quality, revealing common limitations across model families. Third, building on existing work in automatic editing we evaluated methods to improve LLM-generated text. A large-scale preference annotation confirms that although experts largely prefer text edited by other experts, automatic editing methods show promise in improving alignment between LLM-generated and human-written text.",
     "tags": [],
-    "citations": 81,
+    "citations": 82,
     "has_analysis": false
   },
   {
@@ -4721,7 +4721,7 @@
     "note": "CHI 2025 paper",
     "abstract": "Advancements in large language models (LLMs) are sparking a proliferation of LLM-powered user experiences (UX). In product teams, designers often craft UX to meet user needs, but it is unclear how they engage with LLMs as a novel design material. Through a formative study with 12 designers, we find that designers seek a translational process that enables design requirements to shape and be shaped by LLM behavior, motivating a need for designerly adaptation to facilitate this translation. We then built Canvil, a Figma widget that operationalizes designerly adaptation. We used Canvil as a probe to study designerly adaptation in a group-based design study (6 groups, N=17), finding that designers constructively iterated on both adaptation approaches and interface designs to enhance end-user interaction with LLMs. Furthermore, designers identified promising collaborative workflows for designerly adaptation. Our work opens new avenues for processes and tools that foreground designers' human-centered expertise when developing LLM-powered applications.",
     "tags": [],
-    "citations": 43,
+    "citations": 44,
     "has_analysis": false
   },
   {
@@ -4852,7 +4852,7 @@
     "note": "11 pages, 9 figures, 2 tables, ACM CHI 2025 LBW",
     "abstract": "Generative AI models offer many possibilities for text creation and transformation. Current graphical user interfaces (GUIs) for prompting them lack support for iterative exploration, as they do not represent prompts as actionable interface objects. We propose the concept of a composable prompting canvas for text exploration and iteration using dynamic widgets. Users generate widgets through system suggestions, prompting, or manually to capture task-relevant facets that affect the generated text. In a comparative study with a baseline (conversational UI), 18 participants worked on two writing tasks, creating diverse prompting environments with custom widgets and spatial layouts. They reported having more control over the generated text and preferred our system over the baseline. Our design significantly outperformed the baseline on the Creativity Support Index, and participants felt the results were worth the effort. This work highlights the need for GUIs that support user-driven customization and (re-)structuring to increase both the flexibility and efficiency of prompting.",
     "tags": [],
-    "citations": 11,
+    "citations": 12,
     "has_analysis": false
   },
   {
@@ -4900,7 +4900,7 @@
     "note": "Accepted to ACM CHI 2025",
     "abstract": "Visual blends combine elements from two distinct visual concepts into a single, integrated image, with the goal of conveying ideas through imaginative and often thought-provoking visuals. Communicating abstract concepts through visual blends poses a series of conceptual and technical challenges. To address these challenges, we introduce Creative Blends, an AI-assisted design system that leverages metaphors to visually symbolize abstract concepts by blending disparate objects. Our method harnesses commonsense knowledge bases and large language models to align designers' conceptual intent with expressive concrete objects. Additionally, we employ generative text-to-image techniques to blend visual elements through their overlapping attributes. A user study (N=24) demonstrated that our approach reduces participants' cognitive load, fosters creativity, and enhances the metaphorical richness of visual blend ideation. We explore the potential of our method to expand visual blends to include multiple object blending and discuss the insights gained from designing with generative AI.",
     "tags": [],
-    "citations": 23,
+    "citations": 25,
     "has_analysis": false
   },
   {
@@ -4916,7 +4916,7 @@
     "note": "20 pages, 3 figures, 3 tables. Accepted to CHI 2025, ACM Conference on Human Factors in Computing Systems",
     "abstract": "Personalized support is essential to fulfill individuals' emotional needs and sustain their mental well-being. Large language models (LLMs), with great customization flexibility, hold promises to enable individuals to create their own emotional support agents. In this work, we developed ChatLab, where users could construct LLM-powered chatbots with additional interaction features including voices and avatars. Using a Research through Design approach, we conducted a week-long field study followed by interviews and design activities (N = 22), which uncovered how participants created diverse chatbot personas for emotional reliance, confronting stressors, connecting to intellectual discourse, reflecting mirrored selves, etc. We found that participants actively enriched the personas they constructed, shaping the dynamics between themselves and the chatbot to foster open and honest conversations. They also suggested other customizable features, such as integrating online activities and adjustable memory settings. Based on these findings, we discuss opportunities for enhancing personalized emotional support through emerging AI technologies.",
     "tags": [],
-    "citations": 87,
+    "citations": 91,
     "has_analysis": false
   },
   {
@@ -4948,7 +4948,7 @@
     "note": "26 pages, 22 figures, CHI 2025",
     "abstract": "Generative AI has enabled novice designers to quickly create professional-looking visual representations for product concepts. However, novices have limited domain knowledge that could constrain their ability to write prompts that effectively explore a product design space. To understand how experts explore and communicate about design spaces, we conducted a formative study with 12 experienced product designers and found that experts -- and their less-versed clients -- often use visual references to guide co-design discussions rather than written descriptions. These insights inspired DesignWeaver, an interface that helps novices generate prompts for a text-to-image model by surfacing key product design dimensions from generated images into a palette for quick selection. In a study with 52 novices, DesignWeaver enabled participants to craft longer prompts with more domain-specific vocabularies, resulting in more diverse, innovative product designs. However, the nuanced prompts heightened participants' expectations beyond what current text-to-image models could deliver. We discuss implications for AI-based product design support tools.",
     "tags": [],
-    "citations": 44,
+    "citations": 46,
     "has_analysis": false
   },
   {
@@ -4980,7 +4980,7 @@
     "note": "CHI 2025",
     "abstract": "Many visualizations have been developed for explainable AI (XAI), but they often require further reasoning by users to interpret. Investigating XAI for high-stakes medical diagnosis, we propose improving domain alignment with diagrammatic and abductive reasoning to reduce the interpretability gap. We developed DiagramNet to predict cardiac diagnoses from heart auscultation, select the best-fitting hypothesis based on criteria evaluation, and explain with clinically-relevant murmur diagrams. The ante-hoc interpretable model leverages domain-relevant ontology, representation, and reasoning process to increase trust in expert users. In modeling studies, we found that DiagramNet not only provides faithful murmur shape explanations, but also has better performance than baseline models. We demonstrate the interpretability and trustworthiness of diagrammatic, abductive explanations in a qualitative user study with medical students, showing that clinically-relevant, diagrammatic explanations are preferred over technical saliency map explanations. This work contributes insights into providing domain-aligned explanations for user-centric XAI in complex domains.",
     "tags": [],
-    "citations": 14,
+    "citations": 16,
     "has_analysis": false
   },
   {
@@ -5035,7 +5035,7 @@
     "note": "CHI 2025, Project page: https://dream-crafter.github.io/",
     "abstract": "Authoring 3D scenes is a central task for spatial computing applications. Competing visions for lowering existing barriers are (1) focus on immersive, direct manipulation of 3D content or (2) leverage AI techniques that capture real scenes (3D Radiance Fields such as, NeRFs, 3D Gaussian Splatting) and modify them at a higher level of abstraction, at the cost of high latency. We unify the complementary strengths of these approaches and investigate how to integrate generative AI advances into real-time, immersive 3D Radiance Field editing. We introduce Dreamcrafter, a VR-based 3D scene editing system that: (1) provides a modular architecture to integrate generative AI algorithms; (2) combines different levels of control for creating objects, including natural language and direct manipulation; and (3) introduces proxy representations that support interaction during high-latency operations. We contribute empirical findings on control preferences and discuss how generative AI interfaces beyond text input enhance creativity in scene editing and world building.",
     "tags": [],
-    "citations": 27,
+    "citations": 29,
     "has_analysis": false
   },
   {
@@ -5051,7 +5051,7 @@
     "note": "30 pages + appendix, 11 figures, published at CHI 2025",
     "abstract": "Coding assistants are increasingly leveraged in game design, both generating code and making high-level plans. To what degree can these tools align with developer workflows, and what new modes of human-computer interaction can emerge from their use? We present DreamGarden, an AI system capable of assisting with the development of diverse game environments in Unreal Engine. At the core of our method is an LLM-driven planner, capable of breaking down a single, high-level prompt -- a dream, memory, or imagined scenario provided by a human user -- into a hierarchical action plan, which is then distributed across specialized submodules facilitating concrete implementation. This system is presented to the user as a garden of plans and actions, both growing independently and responding to user intervention via seed prompts, pruning, and feedback. Through a user study, we explore design implications of this system, charting courses for future work in semi-autonomous assistants and open-ended simulation design.",
     "tags": [],
-    "citations": 36,
+    "citations": 39,
     "has_analysis": false
   },
   {
@@ -5131,7 +5131,7 @@
     "note": "CHI 2025 Extended Abstract",
     "abstract": "This workshop brings together experts and practitioners from augmented reality (AR) and artificial intelligence (AI) to shape the future of AI-in-the-loop everyday AR experiences. With recent advancements in both AR hardware and AI capabilities, we envision that everyday AR -- always-available and seamlessly integrated into users' daily environments -- is becoming increasingly feasible. This workshop will explore how AI can drive such everyday AR experiences. We discuss a range of topics, including adaptive and context-aware AR, generative AR content creation, always-on AI assistants, AI-driven accessible design, and real-world-oriented AI agents. Our goal is to identify the opportunities and challenges in AI-enabled AR, focusing on creating novel AR experiences that seamlessly blend the digital and physical worlds. Through the workshop, we aim to foster collaboration, inspire future research, and build a community to advance the research field of AI-enhanced AR.",
     "tags": [],
-    "citations": 15,
+    "citations": 16,
     "has_analysis": false
   },
   {
@@ -5147,7 +5147,7 @@
     "note": "17 pages excluding reference and appendix. Accepted at ACM CHI 2025. https://naver-ai.github.io/exploreself",
     "abstract": "Expressing stressful experiences in words is proven to improve mental and physical health, but individuals often disengage with writing interventions as they struggle to organize their thoughts and emotions. Reflective prompts have been used to provide direction, and large language models (LLMs) have demonstrated the potential to provide tailored guidance. However, current systems often limit users' flexibility to direct their reflections. We thus present ExploreSelf, an LLM-driven application designed to empower users to control their reflective journey, providing adaptive support through dynamically generated questions. Through an exploratory study with 19 participants, we examine how participants explore and reflect on personal challenges using ExploreSelf. Our findings demonstrate that participants valued the flexible navigation of adaptive guidance to control their reflective journey, leading to deeper engagement and insight. Building on our findings, we discuss the implications of designing LLM-driven tools that facilitate user-driven and effective reflection of personal challenges.",
     "tags": [],
-    "citations": 40,
+    "citations": 43,
     "has_analysis": false
   },
   {
@@ -5179,7 +5179,7 @@
     "note": "14 pages excluding reference and appendix. Accepted at ACM CHI 2025. https://dl.acm.org/doi/10.1145/3706598.3713109",
     "abstract": "Multi-role pedagogical agents can create engaging and immersive learning experiences, helping learners better understand knowledge in history learning. However, existing pedagogical agents often struggle with multi-role interactions due to complex controls, limited feedback forms, and difficulty dynamically adapting to user inputs. In this study, we developed a VR prototype with LLM-powered adaptive role-switching and action-switching pedagogical agents to help users learn about the history of the Pavilion of Prince Teng. A 2 x 2 between-subjects study was conducted with 84 participants to assess how adaptive role-switching and action-switching affect participants' learning outcomes and experiences. The results suggest that adaptive role-switching enhances participants' perception of the pedagogical agent's trustworthiness and expertise but may lead to inconsistent learning experiences. Adaptive action-switching increases participants' perceived social presence, expertise, and humanness. The study did not uncover any effects of role-switching and action-switching on usability, learning motivation, and cognitive load. Based on the findings, we proposed five design implications for incorporating adaptive role-switching and action-switching into future VR history education tools.",
     "tags": [],
-    "citations": 24,
+    "citations": 26,
     "has_analysis": false
   },
   {
@@ -5211,7 +5211,7 @@
     "note": "Accepted to CHI Conference on Human Factors in Computing Systems (CHI 2025). Code is available at https://github.com/xingbow/sleephealthLLM",
     "abstract": "Despite the prevalence of sleep-tracking devices, many individuals struggle to translate data into actionable improvements in sleep health. Current methods often provide data-driven suggestions but may not be feasible and adaptive to real-life constraints and individual contexts. We present HealthGuru, a novel large language model-powered chatbot to enhance sleep health through data-driven, theory-guided, and adaptive recommendations with conversational behavior change support. HealthGuru's multi-agent framework integrates wearable device data, contextual information, and a contextual multi-armed bandit model to suggest tailored sleep-enhancing activities. The system facilitates natural conversations while incorporating data-driven insights and theoretical behavior change techniques. Our eight-week in-the-wild deployment study with 16 participants compared HealthGuru to a baseline chatbot. Results show improved metrics like sleep duration and activity scores, higher quality responses, and increased user motivation for behavior change with HealthGuru. We also identify challenges and design considerations for personalization and user engagement in health chatbots.",
     "tags": [],
-    "citations": 47,
+    "citations": 51,
     "has_analysis": false
   },
   {
@@ -5243,7 +5243,7 @@
     "note": "Paper accepted into CHI 2025, Yokohama Japan, April 26th - May 1st",
     "abstract": "Recent advances in generative AI music have resulted in new technologies that are being framed as co-creative tools for musicians with early work demonstrating their potential to add to music practice. While the field has seen many valuable contributions, work that involves practising musicians in the design and development of these tools is limited, with the majority of work including them only once a tool has been developed. In this paper, we present a case study that explores the needs of practising musicians through the co-design of a musical variation system, highlighting the importance of involving a diverse range of musicians throughout the design process and uncovering various design insights. This was achieved through two workshops and a two week ecological evaluation, where musicians from different musical backgrounds offered valuable insights not only on a musical system's design but also on how a musical AI could be integrated into their musical practices.",
     "tags": [],
-    "citations": 18,
+    "citations": 19,
     "has_analysis": false
   },
   {
@@ -5282,7 +5282,7 @@
         "why": "Explanations raise reliance even when the answer is wrong. Directly relevant to your AI-written hypotheses and captions."
       }
     ],
-    "citations": 143,
+    "citations": 146,
     "has_analysis": true
   },
   {
@@ -5305,7 +5305,7 @@
         "why": "Experience doesn't change adoption but does change the mental model of AI's role."
       }
     ],
-    "citations": 0,
+    "citations": 1,
     "has_analysis": true
   },
   {
@@ -5360,7 +5360,7 @@
     "note": "17 pages, 19 figures, CHI Conference on Human Factors in Computing Systems (CHI' 2025)",
     "abstract": "Sensing touch on arbitrary surfaces has long been a goal of ubiquitous computing, but often requires instrumenting the surface. Depth camera-based systems have emerged as a promising solution for minimizing instrumentation, but at the cost of high touch-down detection error rates, high touch latency, and high minimum hover distance, limiting them to basic tasks. We developed HaloTouch, a vision-based system which exploits a multipath interference effect from an off-the-shelf time-of-flight depth camera to enable fast, accurate touch interactions on general surfaces. HaloTouch achieves a 99.2% touch-down detection accuracy across various materials, with a motion-to-photon latency of 150 ms. With a brief (20s) user-specific calibration, HaloTouch supports millimeter-accurate hover sensing as well as continuous pressure sensing. We conducted a user study with 12 participants, including a typing task demonstrating text input at 26.3 AWPM. HaloTouch shows promise for more robust, dynamic touch interactions without instrumenting surfaces or adding hardware to users.",
     "tags": [],
-    "citations": 13,
+    "citations": 15,
     "has_analysis": false
   },
   {
@@ -5376,7 +5376,7 @@
     "note": "22 pages, 13 figures, 6 tables. Conditionally accepted to ACM CHI 2025",
     "abstract": "Chinese paper-cutting, an Intangible Cultural Heritage (ICH), faces challenges from the erosion of traditional culture due to the prevalence of realism alongside limited public access to cultural elements. While generative AI can enhance paper-cutting design with its extensive knowledge base and efficient production capabilities, it often struggles to align content with cultural meaning due to users' and models' lack of comprehensive paper-cutting knowledge. To address these issues, we conducted a formative study (N=7) to identify the workflow and design space, including four core factors (Function, Subject Matter, Style, and Method of Expression) and a key element (Pattern). We then developed HarmonyCut, a generative AI-based tool that translates abstract intentions into creative and structured ideas. This tool facilitates the exploration of suggested related content (knowledge, works, and patterns), enabling users to select, combine, and adjust elements for creative paper-cutting design. A user study (N=16) and an expert evaluation (N=3) demonstrated that HarmonyCut effectively provided relevant knowledge, aiding the ideation of diverse paper-cutting designs and maintaining design quality within the design space to ensure alignment between form and cultural connotation.",
     "tags": [],
-    "citations": 29,
+    "citations": 31,
     "has_analysis": false
   },
   {
@@ -5472,7 +5472,7 @@
     "note": "CHI 2025",
     "abstract": "Visual programming has the potential of providing novice programmers with a low-code experience to build customized processing pipelines. Existing systems typically require users to build pipelines from scratch, implying that novice users are expected to set up and link appropriate nodes from a blank workspace. In this paper, we introduce InstructPipe, an AI assistant for prototyping machine learning (ML) pipelines with text instructions. We contribute two large language model (LLM) modules and a code interpreter as part of our framework. The LLM modules generate pseudocode for a target pipeline, and the interpreter renders the pipeline in the node-graph editor for further human-AI collaboration. Both technical and user evaluation (N=16) shows that InstructPipe empowers users to streamline their ML pipeline workflow, reduce their learning curve, and leverage open-ended commands to spark innovative ideas.",
     "tags": [],
-    "citations": 21,
+    "citations": 23,
     "has_analysis": false
   },
   {
@@ -5488,7 +5488,7 @@
     "note": "Upcoming at CHI 2025",
     "abstract": "AI expansion has accelerated workplace adoption of new technologies. Yet, it is unclear whether and how knowledge workers are supported and trained to safely use AI. Inadequate training may lead to unrealized benefits if workers abandon tools, or perpetuate biases if workers misinterpret AI-based outcomes. In a workshop with 39 workers from 26 countries specializing in human resources, labor law, standards creation, and worker training, we explored questions and ideas they had about safely adopting AI. We held 17 follow-up interviews to further investigate what skills and training knowledge workers need to achieve safe and effective AI in practice. We synthesize nine training topics participants surfaced for knowledge workers related to challenges around understanding what AI is, misinterpreting outcomes, exacerbating biases, and worker rights. We reflect how these training topics might be addressed under different contexts, imagine HCI research prototypes as potential training tools, and consider ways to ensure training does not perpetuate harmful values.",
     "tags": [],
-    "citations": 17,
+    "citations": 18,
     "has_analysis": false
   },
   {
@@ -5504,7 +5504,7 @@
     "note": "This is a pre print longer version of a paper accepted to CHI 2025; after rebuttal we had to short the paper to 25 pages. Currently its in overleaf manuscript format with one column. All data for the file is in the osf link",
     "abstract": "In this research, we explored the efficacy of various warning label designs for AI-generated content on social media platforms e.g., deepfakes. We devised and assessed ten distinct label design samples that varied across the dimensions of sentiment, color/iconography, positioning, and level of detail. Our experimental study involved 911 participants randomly assigned to these ten label designs and a control group evaluating social media content. We explored their perceptions relating to 1. Belief in the content being AI-generated, 2. Trust in the labels and 3. Social Media engagement perceptions of the content. The results demonstrate that the presence of labels had a significant effect on the users belief that the content is AI generated, deepfake, or edited by AI. However their trust in the label significantly varied based on the label design. Notably, having labels did not significantly change their engagement behaviors, such as like, comment, and sharing. However, there were significant differences in engagement based on content type: political and entertainment. This investigation contributes to the field of human computer interaction by defining a design space for label implementation and providing empirical support for the strategic use of labels to mitigate the risks associated with synthetically generated media.",
     "tags": [],
-    "citations": 52,
+    "citations": 54,
     "has_analysis": false
   },
   {
@@ -5584,7 +5584,7 @@
     "note": "CHI 2025",
     "abstract": "The overview-detail design pattern, characterized by an overview of multiple items and a detailed view of a selected item, is ubiquitously implemented across software interfaces. Designers often try to account for all users, but ultimately these interfaces settle on a single form. For instance, an overview map may display hotel prices but omit other user-desired attributes. This research instead explores the malleable overview-detail interface, one that end-users can customize to address individual needs. Our content analysis of overview-detail interfaces uncovered three dimensions of variation: content, composition, and layout, enabling us to develop customization techniques along these dimensions. For content, we developed Fluid Attributes, a set of techniques enabling users to show and hide attributes between views and leverage AI to manipulate, reformat, and generate new attributes. For composition and layout, we provided solutions to compose multiple overviews and detail views and transform between various overview and overview-detail layouts. A user study on our techniques implemented in two design probes revealed that participants produced diverse customizations and unique usage patterns, highlighting the need and broad applicability for malleable overview-detail interfaces.",
     "tags": [],
-    "citations": 43,
+    "citations": 45,
     "has_analysis": false
   },
   {
@@ -5629,7 +5629,7 @@
     "note": "Comments: 19 pages, 5 figures. Submitted to CHI 2025",
     "abstract": "With the increasing integration of large lauguage models (LLMs) in education, there is growing interest in using AI agents to support student learning in creative tasks. This study presents an interactive Mentor Agent system named Mentigo, which is designed to assist middle school students in the creative problem solving (CPS) process. We created a comprehensive dataset of real classroom interactions between students and mentors, which include the structured CPS task management, diverse guidance techniques, personalized feedback mechanisms. Based on this dataset, we create agentic workflow for the Mentigo system. The system's effectiveness was evaluated through a comparative experiment with 12 students and reviewed by five expert teachers. The Mentigo system demonstrated significant improvements in student engagement and creative outcomes. The findings provide design implications for leveraging LLMs to support CPS and offer insights into the application of AI mentor agents in educational contexts.",
     "tags": [],
-    "citations": 32,
+    "citations": 33,
     "has_analysis": false
   },
   {
@@ -5645,7 +5645,7 @@
     "note": "Presented at the Human-centered Explainable AI Workshop (HCXAI) @ CHI 2025",
     "abstract": "High-stakes domains like cyber operations need responsible and trustworthy AI methods. While large language models (LLMs) are becoming increasingly popular in these domains, they still suffer from hallucinations. This research paper provides learning outcomes from a case study with LinkQ, an open-source natural language interface that was developed to combat hallucinations by forcing an LLM to query a knowledge graph (KG) for ground-truth data during question-answering (QA). We conduct a quantitative evaluation of LinkQ using a well-known KGQA dataset, showing that the system outperforms GPT-4 but still struggles with certain question categories - suggesting that alternative query construction strategies will need to be investigated in future LLM querying systems. We discuss a qualitative study of LinkQ with two domain experts using a real-world cybersecurity KG, outlining these experts' feedback, suggestions, perceived limitations, and future opportunities for systems like LinkQ.",
     "tags": [],
-    "citations": 5,
+    "citations": 6,
     "has_analysis": false
   },
   {
@@ -5677,7 +5677,7 @@
     "note": "CHI 2025",
     "abstract": "While current chat-based AI assistants primarily operate reactively, responding only when prompted by users, there is significant potential for these systems to proactively assist in tasks without explicit invocation, enabling a mixed-initiative interaction. This work explores the design and implementation of proactive AI assistants powered by large language models. We first outline the key design considerations for building effective proactive assistants. As a case study, we propose a proactive chat-based programming assistant that automatically provides suggestions and facilitates their integration into the programmer's code. The programming context provides a shared workspace enabling the assistant to offer more relevant suggestions. We conducted a randomized experimental study examining the impact of various design elements of the proactive assistant on programmer productivity and user experience. Our findings reveal significant benefits of incorporating proactive chat assistants into coding environments and uncover important nuances that influence their usage and effectiveness.",
     "tags": [],
-    "citations": 91,
+    "citations": 93,
     "has_analysis": false
   },
   {
@@ -5709,7 +5709,7 @@
     "note": "Paper accepted to the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025)",
     "abstract": "People often capture memories through photos, screenshots, and videos. While existing AI-based tools enable querying this data using natural language, they only support retrieving individual pieces of information like certain objects in photos, and struggle with answering more complex queries that involve interpreting interconnected memories like sequential events. We conducted a one-month diary study to collect realistic user queries and generated a taxonomy of necessary contextual information for integrating with captured memories. We then introduce OmniQuery, a novel system that is able to answer complex personal memory-related questions that require extracting and inferring contextual information. OmniQuery augments individual captured memories through integrating scattered contextual information from multiple interconnected memories. Given a question, OmniQuery retrieves relevant augmented memories and uses a large language model (LLM) to generate answers with references. In human evaluations, we show the effectiveness of OmniQuery with an accuracy of 71.5%, outperforming a conventional RAG system by winning or tying for 74.5% of the time.",
     "tags": [],
-    "citations": 23,
+    "citations": 25,
     "has_analysis": false
   },
   {
@@ -5796,7 +5796,7 @@
         "why": "Human review of an AI plan before execution, and how that review affects trust."
       }
     ],
-    "citations": 107,
+    "citations": 108,
     "has_analysis": true
   },
   {
@@ -5908,7 +5908,7 @@
     "note": "21 pages excluding reference and appendix. Accepted at ACM CHI 2025",
     "abstract": "Image-generative AI provides new opportunities to transform personal data into alternative visual forms. In this paper, we illustrate the potential of AI-generated images in facilitating meaningful engagement with personal data. In a formative autobiographical design study, we explored the design and use of AI-generated images derived from personal data. Informed by this study, we designed a web-based application as a probe that represents personal data through generative images utilizing Open AI's GPT-4 model and DALL-E 3. We then conducted a 21-day diary study and interviews using the probe with 16 participants to investigate users' in-depth experiences with images generated by AI in everyday lives. Our findings reveal new qualities of experiences in users' engagement with data, highlighting how participants constructed personal meaning from their data through imagination and speculation on AI-generated images. We conclude by discussing the potential and concerns of leveraging image-generative AI for personal data meaning-making.",
     "tags": [],
-    "citations": 23,
+    "citations": 25,
     "has_analysis": false
   },
   {
@@ -6018,7 +6018,7 @@
         "why": "Turns captured behaviour data (speech, position, orientation) into a dashboard that educators read and judge for trust."
       }
     ],
-    "citations": 30,
+    "citations": 31,
     "has_analysis": false
   },
   {
@@ -6096,7 +6096,7 @@
         "why": "Gets people to engage with an AI suggestion dimension by dimension instead of accepting or rejecting it whole."
       }
     ],
-    "citations": 120,
+    "citations": 119,
     "has_analysis": true
   },
   {
@@ -6112,7 +6112,7 @@
     "note": "Accepted at CHI 2025 Late Breaking Work",
     "abstract": "Joint attention is a critical component of early speech-language development and a key indicator of effective parent-child interaction. However, research on detecting and analysing joint attention remains limited, particularly for Multimodal Large Language Models (MLLMs). This study evaluates MLLMs' ability to comprehend joint attention by analysing 26 parent-child interaction videos annotated by two speech-language pathologists. These annotations identify strong and poor joint attention segments, serving as benchmarks for evaluating the models' interpretive capabilities. Our findings reveal that current MLLMs struggle to accurately interpret joint attention due to a lack of nuanced understanding of child-initiated eye contact, a crucial component of joint attention dynamics. This study highlights the importance of incorporating detailed eye contact to enhance MLLMs' multimodal reasoning. Addressing these gaps is essential for future research to advance the use of MLLMs in analysing and supporting parent-child interactions.",
     "tags": [],
-    "citations": 12,
+    "citations": 13,
     "has_analysis": false
   },
   {
@@ -6224,7 +6224,7 @@
     "note": "Accepted to CHI 2025",
     "abstract": "To make an engaging video, people sequence interesting moments and add visuals such as B-rolls or text. While video editing requires time and effort, AI has recently shown strong potential to make editing easier through suggestions and automation. A key strength of generative models is their ability to quickly generate multiple variations, but when provided with many alternatives, creators struggle to compare them to find the best fit. We propose VideoDiff, an AI video editing tool designed for editing with alternatives. With VideoDiff, creators can generate and review multiple AI recommendations for each editing process: creating a rough cut, inserting B-rolls, and adding text effects. VideoDiff simplifies comparisons by aligning videos and highlighting differences through timelines, transcripts, and video previews. Creators have the flexibility to regenerate and refine AI suggestions as they compare alternatives. Our study participants (N=12) could easily compare and customize alternatives, creating more satisfying results.",
     "tags": [],
-    "citations": 34,
+    "citations": 35,
     "has_analysis": false
   },
   {
@@ -6327,7 +6327,7 @@
     "note": "Accepted to CHI 2024 Late-Breaking Work",
     "abstract": "In this study, we propose a novel human-like memory architecture designed for enhancing the cognitive abilities of large language model based dialogue agents. Our proposed architecture enables agents to autonomously recall memories necessary for response generation, effectively addressing a limitation in the temporal cognition of LLMs. We adopt the human memory cue recall as a trigger for accurate and efficient memory recall. Moreover, we developed a mathematical model that dynamically quantifies memory consolidation, considering factors such as contextual relevance, elapsed time, and recall frequency. The agent stores memories retrieved from the user's interaction history in a database that encapsulates each memory's content and temporal context. Thus, this strategic storage allows agents to recall specific memories and understand their significance to the user in a temporal context, similar to how humans recognize and recall past experiences.",
     "tags": [],
-    "citations": 61,
+    "citations": 63,
     "has_analysis": false
   },
   {
@@ -6423,7 +6423,7 @@
     "note": "Conditionally accepted to CHI 2024",
     "abstract": "Readers find text difficult to consume for many reasons. Summarization can address some of these difficulties, but introduce others, such as omitting, misrepresenting, or hallucinating information, which can be hard for a reader to notice. One approach to addressing this problem is to instead modify how the original text is rendered to make important information more salient. We introduce Grammar-Preserving Text Saliency Modulation (GP-TSM), a text rendering method with a novel means of identifying what to de-emphasize. Specifically, GP-TSM uses a recursive sentence compression method to identify successive levels of detail beyond the core meaning of a passage, which are de-emphasized by rendering words in successively lighter but still legible gray text. In a lab study (n=18), participants preferred GP-TSM over pre-existing word-level text rendering methods and were able to answer GRE reading comprehension questions more efficiently.",
     "tags": [],
-    "citations": 48,
+    "citations": 49,
     "has_analysis": false
   },
   {
@@ -6455,7 +6455,7 @@
     "note": "ACM CHI 2024",
     "abstract": "Researchers have argued that large language models (LLMs) exhibit high-quality writing capabilities from blogs to stories. However, evaluating objectively the creativity of a piece of writing is challenging. Inspired by the Torrance Test of Creative Thinking (TTCT), which measures creativity as a process, we use the Consensual Assessment Technique [3] and propose the Torrance Test of Creative Writing (TTCW) to evaluate creativity as a product. TTCW consists of 14 binary tests organized into the original dimensions of Fluency, Flexibility, Originality, and Elaboration. We recruit 10 creative writers and implement a human assessment of 48 stories written either by professional authors or LLMs using TTCW. Our analysis shows that LLM-generated stories pass 3-10X less TTCW tests than stories written by professionals. In addition, we explore the use of LLMs as assessors to automate the TTCW evaluation, revealing that none of the LLMs positively correlate with the expert assessments.",
     "tags": [],
-    "citations": 328,
+    "citations": 329,
     "has_analysis": false
   },
   {
@@ -6574,7 +6574,7 @@
     "note": "20 pages, 5 figures, 2 tables; Accepted at ACM CHI 2024. More details at https://naver-ai.github.io/chacha/",
     "abstract": "Children typically learn to identify and express emotions through sharing their stories and feelings with others, particularly their family. However, it is challenging for parents or siblings to have emotional communication with children since children are still developing their communication skills. We present ChaCha, a chatbot that encourages and guides children to share personal events and associated emotions. ChaCha combines a state machine and large language models (LLMs) to keep the dialogue on track while carrying on free-form conversations. Through an exploratory study with 20 children (aged 8-12), we examine how ChaCha prompts children to share personal events and guides them to describe associated emotions. Participants perceived ChaCha as a close friend and shared their stories on various topics, such as family trips and personal achievements. Based on the findings, we discuss opportunities for leveraging LLMs to design child-friendly chatbots to support children in sharing emotions.",
     "tags": [],
-    "citations": 105,
+    "citations": 106,
     "has_analysis": false
   },
   {
@@ -6590,7 +6590,7 @@
     "note": "18 pages, 7 figures, published at CHI 2024",
     "abstract": "Evaluating outputs of large language models (LLMs) is challenging, requiring making -- and making sense of -- many responses. Yet tools that go beyond basic prompting tend to require knowledge of programming APIs, focus on narrow domains, or are closed-source. We present ChainForge, an open-source visual toolkit for prompt engineering and on-demand hypothesis testing of text generation LLMs. ChainForge provides a graphical interface for comparison of responses across models and prompt variations. Our system was designed to support three tasks: model selection, prompt template design, and hypothesis testing (e.g., auditing). We released ChainForge early in its development and iterated on its design with academics and online users. Through in-lab and interview studies, we find that a range of people could use ChainForge to investigate hypotheses that matter to them, including in real-world settings. We identify three modes of prompt engineering and LLM hypothesis testing: opportunistic exploration, limited evaluation, and iterative refinement.",
     "tags": [],
-    "citations": 270,
+    "citations": 272,
     "has_analysis": false
   },
   {
@@ -6645,7 +6645,7 @@
     "note": "CHI 2024 Paper - The paper includes 17 pages, 8 figures, 2 tables, along with a 2-page appendix",
     "abstract": "Timely, personalized feedback is essential for students learning programming. LLM-powered tools like ChatGPT offer instant support, but reveal direct answers with code, which may hinder deep conceptual engagement. We developed CodeAid, an LLM-powered programming assistant delivering helpful, technically correct responses, without revealing code solutions. CodeAid answers conceptual questions, generates pseudo-code with line-by-line explanations, and annotates student's incorrect code with fix suggestions. We deployed CodeAid in a programming class of 700 students for a 12-week semester. A thematic analysis of 8,000 usages of CodeAid was performed, further enriched by weekly surveys, and 22 student interviews. We then interviewed eight programming educators to gain further insights. Our findings reveal four design considerations for future educational AI assistants: D1) exploiting AI's unique benefits; D2) simplifying query formulation while promoting cognitive engagement; D3) avoiding direct responses while encouraging motivated learning; and D4) maintaining transparency and control for students to asses and steer AI responses.",
     "tags": [],
-    "citations": 418,
+    "citations": 421,
     "has_analysis": false
   },
   {
@@ -6668,7 +6668,7 @@
         "why": "LLM proposes high-level, human-checkable concepts from unstructured data, a way of surfacing patterns to investigate."
       }
     ],
-    "citations": 168,
+    "citations": 169,
     "has_analysis": false
   },
   {
@@ -6768,7 +6768,7 @@
         "why": "Established principles to position your own design principles against."
       }
     ],
-    "citations": 344,
+    "citations": 349,
     "has_analysis": true
   },
   {
@@ -6816,7 +6816,7 @@
     "note": "Submitted to CHI 2024",
     "abstract": "The advancement of Artificial Intelligence (AI) and Machine Learning (ML) has profound implications for both the utility and security of our digital interactions. This paper investigates the transformative role of Generative AI in Social Engineering (SE) attacks. We conduct a systematic review of social engineering and AI capabilities and use a theory of social engineering to identify three pillars where Generative AI amplifies the impact of SE attacks: Realistic Content Creation, Advanced Targeting and Personalization, and Automated Attack Infrastructure. We integrate these elements into a conceptual model designed to investigate the complex nature of AI-driven SE attacks - the Generative AI Social Engineering Framework. We further explore human implications and potential countermeasures to mitigate these risks. Our study aims to foster a deeper understanding of the risks, human implications, and countermeasures associated with this emerging paradigm, thereby contributing to a more secure and trustworthy human-computer interaction.",
     "tags": [],
-    "citations": 222,
+    "citations": 226,
     "has_analysis": false
   },
   {
@@ -6877,7 +6877,7 @@
     "note": "Accepted to ACM CHI 2024 LBW",
     "abstract": "As the recent Large Language Models(LLM's) become increasingly competent in zero-shot and few-shot reasoning across various domains, educators are showing a growing interest in leveraging these LLM's in conversation-based tutoring systems. However, building a conversation-based personalized tutoring system poses considerable challenges in accurately assessing the student and strategically incorporating the assessment into teaching within the conversation. In this paper, we discuss design considerations for a personalized tutoring system that involves the following two key components: (1) a student modeling with diagnostic components, and (2) a conversation-based tutor utilizing LLM with prompt engineering that incorporates student assessment outcomes and various instructional strategies. Based on these design considerations, we created a proof-of-concept tutoring system focused on personalization and tested it with 20 participants. The results substantiate that our system's framework facilitates personalization, with particular emphasis on the elements constituting student modeling. A web demo of our system is available at http://rlearning-its.com.",
     "tags": [],
-    "citations": 115,
+    "citations": 116,
     "has_analysis": false
   },
   {
@@ -6909,7 +6909,7 @@
     "note": "Accepted to CHI 2024",
     "abstract": "By simply composing prompts, developers can prototype novel generative applications with Large Language Models (LLMs). To refine prototypes into products, however, developers must iteratively revise prompts by evaluating outputs to diagnose weaknesses. Formative interviews (N=8) revealed that developers invest significant effort in manually evaluating outputs as they assess context-specific and subjective criteria. We present EvalLM, an interactive system for iteratively refining prompts by evaluating multiple outputs on user-defined criteria. By describing criteria in natural language, users can employ the system's LLM-based evaluator to get an overview of where prompts excel or fail, and improve these based on the evaluator's feedback. A comparative study (N=12) showed that EvalLM, when compared to manual evaluation, helped participants compose more diverse criteria, examine twice as many outputs, and reach satisfactory prompts with 59% fewer revisions. Beyond prompts, our work can be extended to augment model evaluation and alignment in specific application contexts.",
     "tags": [],
-    "citations": 179,
+    "citations": 181,
     "has_analysis": false
   },
   {
@@ -7092,7 +7092,7 @@
     "note": "24 pages, 21 figures, 6 tables, To appear in the Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI 2024)",
     "abstract": "In this paper, we introduce EyeEcho, a minimally-obtrusive acoustic sensing system designed to enable glasses to continuously monitor facial expressions. It utilizes two pairs of speakers and microphones mounted on glasses, to emit encoded inaudible acoustic signals directed towards the face, capturing subtle skin deformations associated with facial expressions. The reflected signals are processed through a customized machine-learning pipeline to estimate full facial movements. EyeEcho samples at 83.3 Hz with a relatively low power consumption of 167 mW. Our user study involving 12 participants demonstrates that, with just four minutes of training data, EyeEcho achieves highly accurate tracking performance across different real-world scenarios, including sitting, walking, and after remounting the devices. Additionally, a semi-in-the-wild study involving 10 participants further validates EyeEcho's performance in naturalistic scenarios while participants engage in various daily activities. Finally, we showcase EyeEcho's potential to be deployed on a commercial-off-the-shelf (COTS) smartphone, offering real-time facial expression tracking.",
     "tags": [],
-    "citations": 41,
+    "citations": 43,
     "has_analysis": false
   },
   {
@@ -7131,7 +7131,7 @@
     "note": "CHI 2024 Camera Ready",
     "abstract": "Self-guided mental health interventions, such as \"do-it-yourself\" tools to learn and practice coping strategies, show great promise to improve access to mental health care. However, these interventions are often cognitively demanding and emotionally triggering, creating accessibility barriers that limit their wide-scale implementation and adoption. In this paper, we study how human-language model interaction can support self-guided mental health interventions. We take cognitive restructuring, an evidence-based therapeutic technique to overcome negative thinking, as a case study. In an IRB-approved randomized field study on a large mental health website with 15,531 participants, we design and evaluate a system that uses language models to support people through various steps of cognitive restructuring. Our findings reveal that our system positively impacts emotional intensity for 67% of participants and helps 65% overcome negative thoughts. Although adolescents report relatively worse outcomes, we find that tailored interventions that simplify language model generations improve overall effectiveness and equity.",
     "tags": [],
-    "citations": 167,
+    "citations": 168,
     "has_analysis": false
   },
   {
@@ -7241,7 +7241,7 @@
         "why": "An LLM reading a design artifact and producing judgments designers act on."
       }
     ],
-    "citations": 107,
+    "citations": 109,
     "has_analysis": true
   },
   {
@@ -7289,7 +7289,7 @@
     "note": "Accepted to CHI 2024, May 11 to 16, 2024, Honolulu, HI, USA",
     "abstract": "Speech is a natural interface for humans to interact with robots. Yet, aligning a robot's voice to its appearance is challenging due to the rich vocabulary of both modalities. Previous research has explored a few labels to describe robots and tested them on a limited number of robots and existing voices. Here, we develop a robot-voice creation tool followed by large-scale behavioral human experiments (N=2,505). First, participants collectively tune robotic voices to match 175 robot images using an adaptive human-in-the-loop pipeline. Then, participants describe their impression of the robot or their matched voice using another human-in-the-loop paradigm for open-ended labeling. The elicited taxonomy is then used to rate robot attributes and to predict the best voice for an unseen robot. We offer a web interface to aid engineers in customizing robot voices, demonstrating the synergy between cognitive science and machine learning for engineering tools.",
     "tags": [],
-    "citations": 21,
+    "citations": 22,
     "has_analysis": false
   },
   {
@@ -7312,7 +7312,7 @@
         "why": "Non-experts struggle at each step: stating intent, judging whether output is right, fixing it. That is your population problem in a coding setting."
       }
     ],
-    "citations": 123,
+    "citations": 124,
     "has_analysis": true
   },
   {
@@ -7357,7 +7357,7 @@
         "why": "How analysts check AI-generated data analyses for correctness."
       }
     ],
-    "citations": 80,
+    "citations": 81,
     "has_analysis": true
   },
   {
@@ -7658,7 +7658,7 @@
     "note": "This paper has been peer-reviewed and presented at the \"CHI 2024 Workshop on LLMs as Research Tools: Applications and Evaluations in HCI Data Work, May 12, 2024, Honolulu, HI, USA.\"",
     "abstract": "In this position paper, we discuss the potential for leveraging LLMs as interactive research tools to facilitate collaboration between human coders and AI to effectively annotate online risk data at scale. Collaborative human-AI labeling is a promising approach to annotating large-scale and complex data for various tasks. Yet, tools and methods to support effective human-AI collaboration for data annotation are under-studied. This gap is pertinent because co-labeling tasks need to support a two-way interactive discussion that can add nuance and context, particularly in the context of online risk, which is highly subjective and contextualized. Therefore, we provide some of the early benefits and challenges of using LLMs-based tools for risk annotation and suggest future directions for the HCI research community to leverage LLMs as research tools to facilitate human-AI collaboration in contextualized online data annotation. Our research interests align very well with the purposes of the LLMs as Research Tools workshop to identify ongoing applications and challenges of using LLMs to work with data in HCI research. We anticipate learning valuable insights from organizers and participants into how LLMs can help reshape the HCI community's methods for working with data.",
     "tags": [],
-    "citations": 4,
+    "citations": 5,
     "has_analysis": false
   },
   {
@@ -7674,7 +7674,7 @@
     "note": "46 pages, 18 figures; Matching version accepted at CHI 2024",
     "abstract": "We present Large Language Model for Mixed Reality (LLMR), a framework for the real-time creation and modification of interactive Mixed Reality experiences using LLMs. LLMR leverages novel strategies to tackle difficult cases where ideal training data is scarce, or where the design goal requires the synthesis of internal dynamics, intuitive analysis, or advanced interactivity. Our framework relies on text interaction and the Unity game engine. By incorporating techniques for scene understanding, task planning, self-debugging, and memory management, LLMR outperforms the standard GPT-4 by 4x in average error rate. We demonstrate LLMR's cross-platform interoperability with several example worlds, and evaluate it on a variety of creation and modification tasks to show that it can produce and edit diverse objects, tools, and scenes. Finally, we conducted a usability study (N=11) with a diverse set that revealed participants had positive experiences with the system and would use it again.",
     "tags": [],
-    "citations": 165,
+    "citations": 171,
     "has_analysis": false
   },
   {
@@ -7754,7 +7754,7 @@
     "note": "20 pages, 6 figures, 4 tables. Accepted at ACM CHI 2024",
     "abstract": "In the mental health domain, Large Language Models (LLMs) offer promising new opportunities, though their inherent complexity and low controllability have raised questions about their suitability in clinical settings. We present MindfulDiary, a mobile journaling app incorporating an LLM to help psychiatric patients document daily experiences through conversation. Designed in collaboration with mental health professionals (MHPs), MindfulDiary takes a state-based approach to safely comply with the experts' guidelines while carrying on free-form conversations. Through a four-week field study involving 28 patients with major depressive disorder and five psychiatrists, we found that MindfulDiary supported patients in consistently enriching their daily records and helped psychiatrists better empathize with their patients through an understanding of their thoughts and daily contexts. Drawing on these findings, we discuss the implications of leveraging LLMs in the mental health domain, bridging the technical feasibility and their integration into clinical settings.",
     "tags": [],
-    "citations": 203,
+    "citations": 205,
     "has_analysis": false
   },
   {
@@ -8038,7 +8038,7 @@
         "why": "Models programmers' behaviour from Copilot telemetry and shows why a single event metric (acceptance rate) misleads."
       }
     ],
-    "citations": 265,
+    "citations": 269,
     "has_analysis": false
   },
   {
@@ -8150,7 +8150,7 @@
     "note": "Appearing at CHI 2024 (Honolulu, HI)",
     "abstract": "Advances in language modeling have paved the way for novel human-AI co-writing experiences. This paper explores how varying levels of scaffolding from large language models (LLMs) shape the co-writing process. Employing a within-subjects field experiment with a Latin square design, we asked participants (N=131) to respond to argumentative writing prompts under three randomly sequenced conditions: no AI assistance (control), next-sentence suggestions (low scaffolding), and next-paragraph suggestions (high scaffolding). Our findings reveal a U-shaped impact of scaffolding on writing quality and productivity (words/time). While low scaffolding did not significantly improve writing quality or productivity, high scaffolding led to significant improvements, especially benefiting non-regular writers and less tech-savvy users. No significant cognitive burden was observed while using the scaffolded writing tools, but a moderate decrease in text ownership and satisfaction was noted. Our results have broad implications for the design of AI-powered writing tools, including the need for personalized scaffolding mechanisms.",
     "tags": [],
-    "citations": 209,
+    "citations": 213,
     "has_analysis": false
   },
   {
@@ -8253,7 +8253,7 @@
     "note": "Published as a workshop paper at the In2Writing workshop at CHI 2024",
     "abstract": "We diagnose and briefly discuss the dearth of the author: a condition that arises when AI-based creativity support tools for writing allow users to produce large amounts of text without making a commensurate number of creative decisions, resulting in output that is sparse in expressive intent. We argue that the dearth of the author helps to explain a number of recurring difficulties and anxieties around AI-based writing support tools, but that it also suggests an ambitious new goal for AI-based CSTs.",
     "tags": [],
-    "citations": 25,
+    "citations": 26,
     "has_analysis": false
   },
   {
@@ -8356,7 +8356,7 @@
     "note": "This paper has been peer-reviewed and presented at the \"CHI 2024 Workshop on Child-centred AI Design, May 11, 2024, Honolulu, HI, USA.\"",
     "abstract": "Following the recent release of various Artificial Intelligence (AI) based Conversation Agents (CAs), adolescents are increasingly using CAs for interactive knowledge discovery on sensitive topics, including mental and sexual health topics. Exploring such sensitive topics through online search has been an essential part of adolescent development, and CAs can support their knowledge discovery on such topics through human-like dialogues. Yet, unintended risks have been documented with adolescents' interactions with AI-based CAs, such as being exposed to inappropriate content, false information, and/or being given advice that is detrimental to their mental and physical well-being (e.g., to self-harm). In this position paper, we discuss the current landscape and opportunities for CAs to support adolescents' mental and sexual health knowledge discovery. We also discuss some of the challenges related to ensuring the safety of adolescents when interacting with CAs regarding sexual and mental health topics. We call for a discourse on how to set guardrails for the safe evolution of AI-based CAs for adolescents.",
     "tags": [],
-    "citations": 13,
+    "citations": 14,
     "has_analysis": false
   },
   {
@@ -8420,7 +8420,7 @@
     "note": "Accepted to CHI 2024 Late-Breaking Work",
     "abstract": "Advances in Generative Artificial Intelligence (AI) are resulting in AI-generated media output that is (nearly) indistinguishable from human-created content. This can drastically impact users and the media sector, especially given global risks of misinformation. While the currently discussed European AI Act aims at addressing these risks through Article 52's AI transparency obligations, its interpretation and implications remain unclear. In this early work, we adopt a participatory AI approach to derive key questions based on Article 52's disclosure obligations. We ran two workshops with researchers, designers, and engineers across disciplines (N=16), where participants deconstructed Article 52's relevant clauses using the 5W1H framework. We contribute a set of 149 questions clustered into five themes and 18 sub-themes. We believe these can not only help inform future legal developments and interpretations of Article 52, but also provide a starting point for Human-Computer Interaction research to (re-)examine disclosure transparency from a human-centered AI lens.",
     "tags": [],
-    "citations": 81,
+    "citations": 82,
     "has_analysis": false
   },
   {
@@ -8452,7 +8452,7 @@
     "note": "CHI 2024, supplementary materials: https://hdi.cs.umd.edu/papers/TutoAI_CHI24_Supp.pdf",
     "abstract": "Mixed-media tutorials, which integrate videos, images, text, and diagrams to teach procedural skills, offer more browsable alternatives than timeline-based videos. However, manually creating such tutorials is tedious, and existing automated solutions are often restricted to a particular domain. While AI models hold promise, it is unclear how to effectively harness their powers, given the multi-modal data involved and the vast landscape of models. We present TutoAI, a cross-domain framework for AI-assisted mixed-media tutorial creation on physical tasks. First, we distill common tutorial components by surveying existing work; then, we present an approach to identify, assemble, and evaluate AI models for component extraction; finally, we propose guidelines for designing user interfaces (UI) that support tutorial creation based on AI-generated components. We show that TutoAI has achieved higher or similar quality compared to a baseline model in preliminary user studies.",
     "tags": [],
-    "citations": 22,
+    "citations": 23,
     "has_analysis": false
   },
   {
@@ -8523,7 +8523,7 @@
     "note": "Accepted to ACM CHI 2024 as a full paper",
     "abstract": "Recent large language models (LLMs) offer the potential to support public health monitoring by facilitating health disclosure through open-ended conversations but rarely preserve the knowledge gained about individuals across repeated interactions. Augmenting LLMs with long-term memory (LTM) presents an opportunity to improve engagement and self-disclosure, but we lack an understanding of how LTM impacts people's interaction with LLM-driven chatbots in public health interventions. We examine the case of CareCall -- an LLM-driven voice chatbot with LTM -- through the analysis of 1,252 call logs and interviews with nine users. We found that LTM enhanced health disclosure and fostered positive perceptions of the chatbot by offering familiarity. However, we also observed challenges in promoting self-disclosure through LTM, particularly around addressing chronic health conditions and privacy concerns. We discuss considerations for LTM integration in LLM-driven chatbots for public health monitoring, including carefully deciding what topics need to be remembered in light of public health goals.",
     "tags": [],
-    "citations": 95,
+    "citations": 96,
     "has_analysis": false
   },
   {
@@ -8562,7 +8562,7 @@
         "why": "Background on your population: designers keep agency and see AI as assistive."
       }
     ],
-    "citations": 205,
+    "citations": 208,
     "has_analysis": true
   },
   {
@@ -8623,7 +8623,7 @@
         "why": "Survey of AI tools that turn data into visual stories, organized by workflow stage and the AI's role."
       }
     ],
-    "citations": 94,
+    "citations": 95,
     "has_analysis": true
   },
   {
